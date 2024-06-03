@@ -1,0 +1,3 @@
+.clickyboxes li a.active, .clickyboxes li a.active:hover {
+    border-color: #54787c;
+}
