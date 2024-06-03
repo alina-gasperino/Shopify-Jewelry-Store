@@ -207,7 +207,7 @@
                       {% for option in product.options_with_values %}
                         <div class="selector-wrapper styled-select {% if settings.swatch_enabled and settings.swatch_option_name contains option.name %} swatches option--{{ settings.swatch_option_name | handle }}{% endif %}" {% if settings.variant_style == 'listed' %}data-make-box{% endif %}>
                           <label for="SingleOptionSelector-{{ forloop.index0 }}">
-                            {{ option.name }}
+                            {{ option.name }}:
                           </label>
                           <select
                             id="SingleOptionSelector-{{ forloop.index0 }}"

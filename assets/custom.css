@@ -33,3 +33,6 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a {
     border-color: #54787c;
     border-radius: 0;
 }
+.product-detail .input-row .option-selectors label {
+    font-weight: bold;
+}
