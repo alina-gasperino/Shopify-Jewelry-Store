@@ -1,183 +1,195 @@
 {
   "sections": {
-    "8aa4c9f7-423f-43af-850a-982bb9fd76d5": {
-      "type": "image-banner",
+    "slideshow_JjCfUg": {
+      "type": "slideshow",
       "blocks": {
-        "ddf6d1d0-8ced-4066-9fdd-436969a2508d": {
-          "type": "heading",
+        "image_ppx3qz": {
+          "type": "image",
           "settings": {
-            "heading": "SHOP OUR COLLECTION",
-            "heading_size": "h1"
-          }
-        },
-        "b85601d2-d7cd-42a4-b603-d8aa390ae762": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify:\/\/collections",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify:\/\/shop_images\/Proper_Diamonds_Main_Img_4.png",
+            "image_position": "center center",
+            "slide_link": "shopify:\/\/collections",
+            "subheading": "",
+            "title": "SHOP OUR COLLECTION",
+            "title_size": 60,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Shop Now",
+            "text_alignment": "center center"
           }
         }
       },
       "block_order": [
-        "ddf6d1d0-8ced-4066-9fdd-436969a2508d",
-        "b85601d2-d7cd-42a4-b603-d8aa390ae762"
+        "image_ppx3qz"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Proper_Diamonds_Main_Img_4.png",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
+        "height": "full",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
       }
     },
-    "365be4b2-890e-4cdb-85bf-f9d02dc4bbab": {
+    "custom_row_ELtCTQ": {
+      "type": "custom-row",
+      "blocks": {
+        "image_RDmgCK": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/pexels-the-glorious-studio-10037656.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "full"
+          }
+        },
+        "text_CifPwa": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "TAKING THE GUESS WORK OUT",
+            "text": "<p>We strive to provide the best quality diamonds at a fair price, offering only diamonds that meet the highest of our standards.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_RDmgCK",
+        "text_CifPwa"
+      ],
+      "custom_css": [
+        ".flexible-layout--align-center {background: #000;}",
+        ".flexible-layout .column {padding-left: 0; margin-bottom: 0;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "collection_list_NLacg6": {
       "type": "collection-list",
       "blocks": {
-        "1262d668-57bd-43ab-b403-34ed06fe4151": {
-          "type": "featured_collection",
+        "collection_qTMADe": {
+          "type": "collection",
           "settings": {
             "collection": "rings"
           }
         },
-        "template--16689194565866__365be4b2-890e-4cdb-85bf-f9d02dc4bbab-16712300873b5741b9-0": {
-          "type": "featured_collection",
+        "collection_g44N69": {
+          "type": "collection",
           "settings": {
             "collection": "bracelets"
           }
         },
-        "template--16689194565866__365be4b2-890e-4cdb-85bf-f9d02dc4bbab-16712300873b5741b9-1": {
-          "type": "featured_collection",
+        "collection_PdRPHd": {
+          "type": "collection",
           "settings": {
             "collection": "earrings"
           }
         },
-        "template--16689194565866__365be4b2-890e-4cdb-85bf-f9d02dc4bbab-16712300873b5741b9-2": {
-          "type": "featured_collection",
+        "collection_H6XBUN": {
+          "type": "collection",
           "settings": {
             "collection": "necklaces"
           }
-        }
-      },
-      "block_order": [
-        "1262d668-57bd-43ab-b403-34ed06fe4151",
-        "template--16689194565866__365be4b2-890e-4cdb-85bf-f9d02dc4bbab-16712300873b5741b9-0",
-        "template--16689194565866__365be4b2-890e-4cdb-85bf-f9d02dc4bbab-16712300873b5741b9-1",
-        "template--16689194565866__365be4b2-890e-4cdb-85bf-f9d02dc4bbab-16712300873b5741b9-2"
-      ],
-      "settings": {
-        "title": "Featured Collections",
-        "heading_size": "h1",
-        "image_ratio": "portrait",
-        "columns_desktop": 4,
-        "color_scheme": "accent-2",
-        "show_view_all": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "4b953c6c-e445-4ccb-9570-2124fc6e0c62": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16689194565866__4b953c6c-e445-4ccb-9570-2124fc6e0c62-167114848075734353-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "TAKING THE GUESS WORK OUT",
-            "heading_size": "h1"
-          }
         },
-        "7dc5259a-660b-46a8-86d3-2327e26361ee": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We strive to provide the best quality diamonds at a fair price, offering only diamonds that meet the highest of our standards.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--16689194565866__4b953c6c-e445-4ccb-9570-2124fc6e0c62-167114848075734353-0",
-        "7dc5259a-660b-46a8-86d3-2327e26361ee"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/pexels-the-glorious-studio-10037656.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "inverse",
-        "mobile_content_alignment": "left",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "662fb308-237c-4803-bb78-eec16670c907": {
-      "type": "collection-list",
-      "blocks": {
-        "template--16689194565866__662fb308-237c-4803-bb78-eec16670c907-1671231022ae1aef24-0": {
-          "type": "featured_collection",
+        "collection_QV9EUB": {
+          "type": "collection",
           "settings": {
             "collection": "pendants"
           }
-        },
-        "template--16689194565866__662fb308-237c-4803-bb78-eec16670c907-1671231022ae1aef24-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dog-tags"
-          }
         }
       },
       "block_order": [
-        "template--16689194565866__662fb308-237c-4803-bb78-eec16670c907-1671231022ae1aef24-0",
-        "template--16689194565866__662fb308-237c-4803-bb78-eec16670c907-1671231022ae1aef24-1"
+        "collection_qTMADe",
+        "collection_g44N69",
+        "collection_PdRPHd",
+        "collection_H6XBUN",
+        "collection_QV9EUB"
       ],
       "settings": {
-        "title": "Shop Jewelry",
-        "heading_size": "h1",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "color_scheme": "accent-2",
-        "show_view_all": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 72
+        "title": "Featured Collections",
+        "enable_carousel": true,
+        "grid": 4,
+        "use_alt_bg": true,
+        "full_width": true
       }
     },
-    "8a0337bf-1c9b-49be-980d-52248d5eec43": {
-      "type": "image-banner",
+    "background-video": {
+      "type": "background-video",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Proper_Diamonds_Footer_Img.png",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "subheading": "",
+        "title": "Background video",
+        "title_size": 90,
+        "use_h1": false,
+        "text": "<p>Use a video to get a customer's attention<\/p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center center",
+        "height_desktop": 740,
+        "height_mobile": 580,
+        "full_width": true,
+        "overlay_style": "no_background"
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "settings": {
+        "image_width": 700,
+        "subheading": "",
+        "title": "Image with text",
+        "use_h1": false,
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Read more",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": true
+      }
+    },
+    "map": {
+      "type": "map",
+      "settings": {
+        "color_bg": "#f7f7f8",
+        "full_width": true,
+        "heading": "Our store",
+        "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+        "button": "Directions",
+        "show_pin": true,
+        "show_feature_image": true,
+        "map_address": "80 Spadina Ave, Toronto",
+        "api_key": "",
+        "map_style": "silver"
       }
     }
   },
   "order": [
-    "8aa4c9f7-423f-43af-850a-982bb9fd76d5",
-    "365be4b2-890e-4cdb-85bf-f9d02dc4bbab",
-    "4b953c6c-e445-4ccb-9570-2124fc6e0c62",
-    "662fb308-237c-4803-bb78-eec16670c907",
-    "8a0337bf-1c9b-49be-980d-52248d5eec43"
+    "slideshow_JjCfUg",
+    "custom_row_ELtCTQ",
+    "collection_list_NLacg6",
+    "background-video",
+    "image-with-text-2",
+    "map"
   ]
 }

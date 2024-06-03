@@ -1,104 +1,131 @@
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
-    {%- when 'announcement' -%}
-      <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
-        {%- if block.settings.text != blank -%}
-          {%- if block.settings.link != blank -%}
-            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-          {%- endif -%}
-              <div class="page-width">
-                <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
-                  {{ block.settings.text | escape }}
-                  {%- if block.settings.link != blank -%}
-                    {% render 'icon-arrow' %}
-                  {%- endif -%}
-                </p>
-              </div>
-          {%- if block.settings.link != blank -%}
-            </a>
-          {%- endif -%}
+
+{% if section.settings.announcement_show or section.settings.show_locale_selector or section.settings.show_currency_selector or section.settings.menu != blank %}
+  <div id="section-id-{{ section.id }}" class="announcement-bar{% if section.settings.announcement_show %} announcement-bar--with-announcement{% endif %}{% if section.settings.announcement_text.size > 45 and section.settings.menu != blank %} announcement-bar--tablet-wrap{% endif %}" data-section-type="announcement-bar" data-cc-animate>
+    {% style %}
+      #section-id-{{ section.id }} {
+        background: {{ section.settings.announcement_bar_col }};
+        color: {{ section.settings.announcement_text_col }};
+      }
+    {% endstyle %}
+
+    {%- capture announcement_html -%}
+      {%- if section.settings.announcement_show -%}
+        {%- if section.settings.announcement_link != blank -%}
+          <a class="announcement-bar__link" href="{{ section.settings.announcement_link }}">
         {%- endif -%}
+        <div class="announcement-bar__inner">{{ section.settings.announcement_text }}</div>
+        {%- if section.settings.announcement_link != blank -%}
+          </a>
+        {%- endif -%}
+      {%- endif -%}
+    {%- endcapture -%}
+
+    <div class="container container--no-max">
+      <div class="announcement-bar__left">
+        {% if section.settings.show_social_icons %}
+          {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: 'x30', container_class: 'desktop-only' %}
+        {% endif %}
       </div>
-  {%- endcase -%}
-{%- endfor -%}
+
+      <div class="announcement-bar__middle">
+        {{ announcement_html }}
+      </div>
+
+      <div class="announcement-bar__right">
+        {% if section.settings.menu != blank %}
+          <span class="inline-menu desktop-only">
+            {% for link in linklists[section.settings.menu].links %}
+              <a class="inline-menu__link announcement-bar__link" href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+          </span>
+        {% endif %}
+        {% if section.settings.show_locale_selector or section.settings.show_currency_selector %}
+          <div class="header-disclosures desktop-only">
+            {% render 'localization', input_prefix: 'annbar' %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
 
 {% schema %}
-{
-  "name": "t:sections.announcement-bar.name",
-  "max_blocks": 12,
-  "blocks": [
-    {
-      "type": "announcement",
-      "name": "t:sections.announcement-bar.blocks.announcement.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "text",
-          "default": "Welcome to our store",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
-        },
-        {
-          "type": "select",
-          "id": "text_alignment",
-          "options": [
-            {
-              "value": "left",
-              "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__1.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__2.label"
-            },
-            {
-              "value": "right",
-              "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__3.label"
-            }
-          ],
-          "default": "center",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.label"
-        },
-        {
-          "type": "select",
-          "id": "color_scheme",
-          "options": [
-            {
-              "value": "accent-1",
-              "label": "t:sections.all.colors.accent_1.label"
-            },
-            {
-              "value": "accent-2",
-              "label": "t:sections.all.colors.accent_2.label"
-            },
-            {
-              "value": "background-1",
-              "label": "t:sections.all.colors.background_1.label"
-            },
-            {
-              "value": "background-2",
-              "label": "t:sections.all.colors.background_2.label"
-            },
-            {
-              "value": "inverse",
-              "label": "t:sections.all.colors.inverse.label"
-            }
-          ],
-          "default": "accent-1",
-          "label": "t:sections.all.colors.label"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
-        }
-      ]
-    }
-  ],
-  "default": {
-    "blocks": [
+  {
+    "name": "Announcement bar",
+    "class": "section-announcement-bar",
+    "settings": [
       {
-        "type": "announcement"
+        "type": "checkbox",
+        "id": "announcement_show",
+        "label": "Show announcement",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "announcement_text",
+        "label": "Text",
+        "default": "Announce something here"
+      },
+      {
+        "type": "url",
+        "id": "announcement_link",
+        "label": "Link"
+      },
+      {
+        "type": "color",
+        "id": "announcement_bar_col",
+        "label": "Bar",
+        "default": "#4a4a4a"
+      },
+      {
+        "type": "color",
+        "id": "announcement_text_col",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Links"
+      },
+      {
+        "type": "paragraph",
+        "content": "Links, social media icons, and localization options will show in the menu on mobile"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_social_icons",
+        "label": "Show social media links",
+        "default": true
+      },
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu",
+        "info": "This menu won't show dropdown items"
+      },
+      {
+        "type": "header",
+        "content": "Language Selector",
+        "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_locale_selector",
+        "label": "Show language selector",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Currency Selector",
+        "info": "To add a currency, go to your [payment settings.](/admin/settings/payments)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_currency_selector",
+        "label": "Show currency selector",
+        "default": true
       }
     ]
   }
-}
 {% endschema %}
