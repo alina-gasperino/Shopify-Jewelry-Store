@@ -75,7 +75,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 
         $(this).find('option').each(function () {
-          $('<li/>').appendTo($optCont).append($('<a href="#"/>').attr('data-value', $(this).val()).html($(this).html()).addClass('opt--' + removeDiacritics($(this).text()).toLowerCase().replace(/'/g, '').replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/-*$/, '')));
+          $('<li/>').appendTo($optCont).append($('<a href="#"/>').attr('data-value', $(this).val()).html('<span>' + $(this).html() + '</span>').addClass('opt--' + removeDiacritics($(this).text()).toLowerCase().replace(/'/g, '').replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/-*$/, '')));
         }); //Select change event
 
         $(this).hide().addClass('replaced').on('change.clickyboxes keyup.clickyboxes', function () {

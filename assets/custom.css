@@ -1,3 +1,35 @@
 .clickyboxes li a.active, .clickyboxes li a.active:hover {
     border-color: #54787c;
+    border-radius: 50%;
+}
+.swatches .clickyboxes {
+    width: fit-content;
+}
+select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
+    width: 36px;
+    height: 36px;
+    top: 5px;
+    left: 5px;
+}
+.clickyboxes li a {
+    padding: 0 23px;
+    border-color: transparent;
+}
+select[data-listed][data-colour-swatch=true]+.clickyboxes a {
+    padding-left: 23px;
+}
+.clickyboxes.options--shape li a.active, .clickyboxes.options--shape li a.active:hover {
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 3px #54787c;
+}
+.clickyboxes li a:hover {
+    border-color: transparent;
+}
+.clickyboxes.options--shape li a span, .clickyboxes.options--metal li a span {
+    display: none;
+}
+.clickyboxes.options--diamond li a.active, .clickyboxes.options--diamond li a.active:hover {
+    border-color: #54787c;
+    border-radius: 0;
 }
