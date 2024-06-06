@@ -10,6 +10,7 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
     height: 36px;
     top: 5px;
     left: 5px;
+    background-color: transparent;
 }
 .clickyboxes li a {
     padding: 0 23px;
@@ -38,4 +39,7 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a {
 }
 .product-detail .input-row .option-selectors label span {
     font-weight: 500;
+}
+select[data-listed][data-colour-swatch=true]+.clickyboxes li {
+    min-width: initial;
 }
