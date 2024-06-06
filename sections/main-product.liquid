@@ -316,6 +316,27 @@
                             {{ 'products.product.add_to_cart' | t }}
                           {%- endif -%}
                         {%- endcapture -%}
+
+                        <p class="line-item-property__field" style="display:none;">
+                          <label>Carat Size</label>
+                          <select id="carat-size" name="properties[Carat Size]">
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                            <option value="6.5">6.5</option>
+                            <option value="7">7</option>
+                          </select>
+                        </p>
+
+                        <div class="option_field ring-sizes"></div>
                         <button class="button button--large" type="submit" data-add-to-cart-text="{{ add_to_cart_text | escape }}">
                           {{- add_to_cart_text -}}
                         </button>

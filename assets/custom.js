@@ -8,4 +8,13 @@ jQuery(document).ready(function ($) {
             $(this).closest(".selector-wrapper").find("label").find("span").text($(this).text())
         })
     })
+
+    $(".option_field.ring-sizes").append($(".keyideas.price"))
+
+    setTimeout(() => {
+        if($(".keyideas.price").length > 0) {
+            $(".line-item-property__field").show()
+        }
+    }, 500);
+
 });
