@@ -922,7 +922,7 @@
     "prod_thumb_hover_image": true,
     "prod_thumb_options_names": "Color, Size",
     "quickbuy_style": "button",
-    "enable_payment_button": true,
+    "enable_payment_button": false,
     "prod_block_label_loc": "top left",
     "prod_stock_warn_show": true,
     "prod_stock_warn_limit_int": 5,
