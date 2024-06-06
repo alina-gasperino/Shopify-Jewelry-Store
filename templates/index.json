@@ -35,6 +35,62 @@
         "autoplay_speed": 7
       }
     },
+    "collection_list_NLacg6": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_qTMADe": {
+          "type": "collection",
+          "settings": {
+            "collection": "rings"
+          }
+        },
+        "collection_g44N69": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets"
+          }
+        },
+        "collection_PdRPHd": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings"
+          }
+        },
+        "collection_H6XBUN": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklaces"
+          }
+        },
+        "collection_QV9EUB": {
+          "type": "collection",
+          "settings": {
+            "collection": "pendants"
+          }
+        },
+        "collection_8WGFXU": {
+          "type": "collection",
+          "settings": {
+            "collection": "engagement-rings"
+          }
+        }
+      },
+      "block_order": [
+        "collection_qTMADe",
+        "collection_g44N69",
+        "collection_PdRPHd",
+        "collection_H6XBUN",
+        "collection_QV9EUB",
+        "collection_8WGFXU"
+      ],
+      "settings": {
+        "title": "Featured Collections",
+        "enable_carousel": true,
+        "grid": 4,
+        "use_alt_bg": true,
+        "full_width": true
+      }
+    },
     "custom_row_ELtCTQ": {
       "type": "custom-row",
       "blocks": {
@@ -77,60 +133,14 @@
         "text_CifPwa"
       ],
       "custom_css": [
+        ".fully-spaced-row--medium {margin-top: 0;}",
         ".flexible-layout--align-center {background: #000;}",
-        ".flexible-layout .column {padding-left: 0; margin-bottom: 0;}"
+        ".flexible-layout .column {padding-left: 0; margin-bottom: 0;}",
+        "h1,p {color: #fff;}",
+        ".flexible-layout .column.text-row {padding: 0 6em;}"
       ],
       "settings": {
         "alignment": "middle"
-      }
-    },
-    "collection_list_NLacg6": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_qTMADe": {
-          "type": "collection",
-          "settings": {
-            "collection": "rings"
-          }
-        },
-        "collection_g44N69": {
-          "type": "collection",
-          "settings": {
-            "collection": "bracelets"
-          }
-        },
-        "collection_PdRPHd": {
-          "type": "collection",
-          "settings": {
-            "collection": "earrings"
-          }
-        },
-        "collection_H6XBUN": {
-          "type": "collection",
-          "settings": {
-            "collection": "necklaces"
-          }
-        },
-        "collection_QV9EUB": {
-          "type": "collection",
-          "settings": {
-            "collection": "pendants"
-          }
-        }
-      },
-      "block_order": [
-        "collection_qTMADe",
-        "collection_g44N69",
-        "collection_PdRPHd",
-        "collection_H6XBUN",
-        "collection_QV9EUB"
-      ],
-      "settings": {
-        "title": "Featured Collections",
-        "enable_carousel": true,
-        "grid": 4,
-        "use_alt_bg": true,
-        "full_width": true
       }
     },
     "background-video": {
@@ -186,8 +196,8 @@
   },
   "order": [
     "slideshow_JjCfUg",
-    "custom_row_ELtCTQ",
     "collection_list_NLacg6",
+    "custom_row_ELtCTQ",
     "background-video",
     "image-with-text-2",
     "map"
