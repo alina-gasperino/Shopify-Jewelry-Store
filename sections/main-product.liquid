@@ -320,9 +320,6 @@
                           {{- add_to_cart_text -}}
                         </button>
                       </div>
-                      {% if enable_dynamic_payment_button %}
-                        {{ form | payment_button }}
-                      {% endif %}
 
                       {% if block.settings.show_backorder_text == true %}
                         {% render 'backorder', product: product, variant: current_variant %}
