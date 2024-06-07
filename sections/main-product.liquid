@@ -319,7 +319,7 @@
 
                         <p class="line-item-property__field" style="display:none;">
                           <label>Carat Size</label>
-                          <select id="carat-size" name="properties[Carat Size]">
+                          <select id="carat-size" name="properties[Carat]">
                             <option value="1">1</option>
                             <option value="1.5">1.5</option>
                             <option value="2">2</option>
@@ -437,7 +437,7 @@
   </div><!-- /.product-detail -->
 
   {% if section.settings.show_location_underneath %}
-    <div class="product-description rte container cf padded-row not-in-quickbuy">{{ product.description }}</div>
+    <div class="product-description rte page_container cf padded-row not-in-quickbuy">{{ product.description }}</div>
   {% endif %}
 </div>
 

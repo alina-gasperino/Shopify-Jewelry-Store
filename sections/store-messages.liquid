@@ -1,7 +1,7 @@
 
 {% if section.settings.head_not_home_only == false or template == 'index' %}
   <div id="store-messages" class="messages-{{ section.blocks.size }}" data-cc-animate>
-    <div class="container cf">
+    <div class="page_container cf">
       {% for block in section.blocks %}
 
       <div class="message message-{{ forloop.index }}" data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.15 }}s">

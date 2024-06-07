@@ -111,7 +111,7 @@
 {% if blog.comments_enabled? %}
     {% paginate article.comments by 50 %}
         {% if article.comments != blank %}
-        <div id="comments" class="container cf padded-row" data-cc-animate>
+        <div id="comments" class="page_container cf padded-row" data-cc-animate>
             <h4 class="align-centre">{{ 'blogs.comments.title' | t }}</h4>
 
             {% comment %} Show a comment that was *just* submitted {% endcomment %}
