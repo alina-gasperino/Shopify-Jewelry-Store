@@ -4,7 +4,6 @@ jQuery(document).ready(function ($) {
             $(this).closest(".selector-wrapper").find("label").find("span").text($(this).text())
         }
         $(this).click(function() {
-            console.log($(this).text())
             $(this).closest(".selector-wrapper").find("label").find("span").text($(this).text())
         })
     })
