@@ -16,4 +16,8 @@ jQuery(document).ready(function ($) {
         }
     }, 500);
 
+    $("#carat-size").change(function () { 
+        console.log($(this).val())
+    });
+
 });

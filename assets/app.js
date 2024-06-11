@@ -467,8 +467,8 @@ document.addEventListener('DOMContentLoaded', () => {
               "id": cartIds,
               "properties": {
                   "Ring Size": ringSize,
-                  "SKU": SKU
-                   
+                  "SKU": SKU,
+                  "Carat Size": carat
               }
           } 
           fetch("/cart/change.js", {
