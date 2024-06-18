@@ -51,3 +51,57 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes li {
     border: 1px solid gray;
     height: 100%;
 }
+.bottom-info .info-text {
+    display: none;
+}
+.quantity-submit-row__submit.input-row {
+    display: flex;
+    flex-direction: column;
+}
+.product__titles.key {
+    order: 3;
+}
+.custom-ring.custom-pro-box {
+    order: 4;
+}
+.custom-diamond.custom-pro-box {
+    order: 5;
+}
+.bottom-info {
+    order: 1;
+}
+.line-item-property__field {
+    order: 2;
+}
+.option_field.ring-sizes {
+    order: 6;
+}
+.ring_quantity {
+    order: 7;
+    margin-bottom: 18px;
+}
+.product-form .quantity-submit-row.has-spb .button {
+    order: 8;
+}
+.radio_boxes {
+    display: flex;
+    gap: 5px;
+}
+.radio_boxes input {
+    display: none;
+}
+.radio_boxes label {
+    cursor: pointer;
+    border: 1px solid rgb(216, 214, 209);
+    min-width: 36px;
+    min-height: 36px;
+}
+.line-item-property__field > label {
+    font-weight: bold;
+}
+.line-item-property__field > label span {
+    font-weight: 500;
+}
+label.selected {
+    border-color: #54787c;
+}
