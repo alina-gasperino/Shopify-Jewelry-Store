@@ -317,44 +317,6 @@
                           {%- endif -%}
                         {%- endcapture -%}
 
-                        <div class="line-item-property__field" style="display:none;">
-                          <label>Carat Weight: <span>1</span></label>
-                          <select id="carat-size" name="properties[Carat Weight]">
-                            <option value="1">1</option>
-                            <option value="1.5">1.5</option>
-                            <option value="2">2</option>
-                            <option value="2.5">2.5</option>
-                            <option value="3">3</option>
-                            <option value="3.5">3.5</option>
-                            <option value="4">4</option>
-                            <option value="4.5">4.5</option>
-                            <option value="5">5</option>
-                            <option value="5.5">5.5</option>
-                            <option value="6">6</option>
-                            <option value="6.5">6.5</option>
-                            <option value="7">7</option>
-                          </select>
-
-                          <div class="radio_boxes">
-                            <input type="radio" id="age1" name="carat" value="1" checked>
-                            <label class="selected" for="age1" style="display: flex; justify-content: center; align-items: center; font-size: 14px;">1</label>
-                            <input type="radio" id="age2" name="carat" value="2">
-                            <label for="age2" style="display: flex; justify-content: center; align-items: center; font-size: 14px;">2</label>
-                            <input type="radio" id="age3" name="carat" value="3">
-                            <label for="age3" style="display: flex; justify-content: center; align-items: center; font-size: 14px;">3</label>
-                            <input type="radio" id="age4" name="carat" value="4">
-                            <label for="age4" style="display: flex; justify-content: center; align-items: center; font-size: 14px;">4</label>
-                            <input type="radio" id="age5" name="carat" value="5">
-                            <label for="age5" style="display: flex; justify-content: center; align-items: center; font-size: 14px;">5</label>
-                            <input type="radio" id="age6" name="carat" value="6">
-                            <label for="age6" style="display: flex; justify-content: center; align-items: center; font-size: 14px;">6</label>
-                            <input type="radio" id="age7" name="carat" value="7">
-                            <label for="age7" style="display: flex; justify-content: center; align-items: center; font-size: 14px;">7</label>
-                          </div>
-                        </div>
-
-                        <div class="option_field ring-sizes"></div>
-                        <div class="ring_quantity"></div>
                         <button class="button button--large" type="submit" data-add-to-cart-text="{{ add_to_cart_text | escape }}">
                           {{- add_to_cart_text -}}
                         </button>

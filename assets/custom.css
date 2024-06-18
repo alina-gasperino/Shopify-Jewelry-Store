@@ -43,13 +43,16 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a {
 select[data-listed][data-colour-swatch=true]+.clickyboxes li {
     min-width: initial;
 }
-.ring-sizes .field, #carat-size {
+.ring-sizes .field {
     width: 50%;
     padding: 10px;
     margin-bottom: 15px;
     margin-top: 10px;
     border: 1px solid gray;
     height: 100%;
+}
+#carat-size {
+    display: none;
 }
 .bottom-info .info-text {
     display: none;

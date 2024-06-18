@@ -18,10 +18,6 @@ jQuery(document).ready(function ($) {
         }
     }, 500);
 
-    $("#carat-size").change(function () { 
-        console.log($(this).val())
-    });
-
     $(".radio_boxes label").each(function() {
         $(this).click(function(){
             $(this).closest(".line-item-property__field").find("label").find("span").text($(this).text());
