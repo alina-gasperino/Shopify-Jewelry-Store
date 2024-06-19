@@ -21,11 +21,17 @@ jQuery(document).ready(function ($) {
     $(".radio_boxes label").each(function() {
         $(this).click(function(){
             $(this).closest(".line-item-property__field").find("label").find("span").text($(this).text());
-            $(".radio_boxes label").each(function() {
+            $(this).closest(".radio_boxes").find("label").each(function() {
                 $(this).removeClass("selected")
             })
             $(this).addClass("selected");
         })
     })
 
+    $(".radio_boxes.ring_size_selector label").each(function() {
+        $(this).click(function() {
+            var ring_size = $(this).text()
+            $(".allsizes").val(ring_size)
+        })
+    })
 });

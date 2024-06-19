@@ -72,6 +72,7 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes li {
 }
 .bottom-info {
     order: 1;
+    display: none;
 }
 .line-item-property__field {
     order: 2;
