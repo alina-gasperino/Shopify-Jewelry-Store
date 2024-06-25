@@ -137,7 +137,8 @@
         ".flexible-layout--align-center {background: #000;}",
         ".flexible-layout .column {padding-left: 0; margin-bottom: 0;}",
         "h1,p {color: #fff;}",
-        ".flexible-layout .column.text-row {padding: 0 6em;}"
+        ".flexible-layout .column.text-row {padding: 0 6em;}",
+        "@media screen and (max-width: 750px) {.flexible-layout .column.text-row {padding: 2em; }}"
       ],
       "settings": {
         "alignment": "middle"
