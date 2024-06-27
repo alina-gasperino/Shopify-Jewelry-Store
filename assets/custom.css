@@ -109,3 +109,6 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes li {
 label.selected {
     border-color: #54787c;
 }
+#choose-diamond .modal-content .diamond__content--price #add_diamond {
+    display: none !important;
+}
