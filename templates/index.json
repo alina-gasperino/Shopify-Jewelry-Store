@@ -15,7 +15,7 @@
             "text": "",
             "enlarge_text": true,
             "button_label": "Shop Now",
-            "text_alignment": "center center"
+            "text_alignment": "bottom center"
           }
         }
       },
@@ -33,6 +33,20 @@
         "slide_navigation": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
+      }
+    },
+    "featured_collection_YpeEB9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Build your own Engagement Rings",
+        "collection": "engagement-rings",
+        "show_vendor": false,
+        "enable_carousel": false,
+        "grid": 3,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": false,
+        "full_width": true
       }
     },
     "collection_list_NLacg6": {
@@ -84,10 +98,10 @@
         "collection_8WGFXU"
       ],
       "settings": {
-        "title": "Featured Collections",
+        "title": "Shop Our Jewelries",
         "enable_carousel": true,
         "grid": 4,
-        "use_alt_bg": true,
+        "use_alt_bg": false,
         "full_width": true
       }
     },
@@ -197,6 +211,7 @@
   },
   "order": [
     "slideshow_JjCfUg",
+    "featured_collection_YpeEB9",
     "collection_list_NLacg6",
     "custom_row_ELtCTQ",
     "background-video",
