@@ -49,6 +49,41 @@
         "full_width": true
       }
     },
+    "slideshow_FLXePX": {
+      "type": "slideshow",
+      "blocks": {
+        "image_9JkM8A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Proper_Diamonds_Footer_Img.png",
+            "image_position": "center center",
+            "slide_link": "shopify:\/\/collections",
+            "subheading": "",
+            "title": "SHOP OUR COLLECTION",
+            "title_size": 60,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Shop Now",
+            "text_alignment": "bottom center"
+          }
+        }
+      },
+      "block_order": [
+        "image_9JkM8A"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
     "collection_list_NLacg6": {
       "type": "collection-list",
       "blocks": {
@@ -158,64 +193,31 @@
         "alignment": "middle"
       }
     },
-    "background-video": {
-      "type": "background-video",
-      "settings": {
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "subheading": "",
-        "title": "Background video",
-        "title_size": 90,
-        "use_h1": false,
-        "text": "<p>Use a video to get a customer's attention<\/p>",
-        "enlarge_text": true,
-        "button_label": "",
-        "button_link": "",
-        "text_alignment": "center center",
-        "height_desktop": 740,
-        "height_mobile": 580,
-        "full_width": true,
-        "overlay_style": "no_background"
-      }
-    },
-    "image-with-text-2": {
-      "type": "image-with-text",
-      "settings": {
-        "image_width": 700,
-        "subheading": "",
-        "title": "Image with text",
-        "use_h1": false,
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "button_label": "Read more",
-        "button_link": "",
-        "button_style": "primary",
-        "image_position": "left",
-        "text_alignment": "left",
-        "use_alt_bg": true
-      }
-    },
     "map": {
       "type": "map",
+      "custom_css": [
+        ".map-section__map {width: 100%;}"
+      ],
       "settings": {
         "color_bg": "#f7f7f8",
         "full_width": true,
-        "heading": "Our store",
-        "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+        "heading": "Our Store",
+        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
         "button": "Directions",
         "show_pin": true,
-        "show_feature_image": true,
-        "map_address": "80 Spadina Ave, Toronto",
-        "api_key": "",
-        "map_style": "silver"
+        "show_feature_image": false,
+        "map_address": "620 Newport Center Drive, Suite 1100, Newport Beach California 92660, United States",
+        "api_key": "AIzaSyDlrcQS4-85JSq7PKUIj4naArhdC6ff5uY",
+        "map_style": "default"
       }
     }
   },
   "order": [
     "slideshow_JjCfUg",
     "featured_collection_YpeEB9",
+    "slideshow_FLXePX",
     "collection_list_NLacg6",
     "custom_row_ELtCTQ",
-    "background-video",
-    "image-with-text-2",
     "map"
   ]
 }
