@@ -962,16 +962,6 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "1601374680247": {
-            "type": "text",
-            "settings": {
-              "title": "Talk about your store",
-              "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
-              "image_width": 150,
-              "show_social_icons": true,
-              "soc_icons_large": false
-            }
-          },
           "1601374650582": {
             "type": "menu",
             "settings": {
@@ -987,12 +977,22 @@
               "show_social_icons": true,
               "soc_icons_large": false
             }
+          },
+          "text_98GiaP": {
+            "type": "text",
+            "settings": {
+              "title": "Talk about your store",
+              "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
+              "image_width": 100,
+              "show_social_icons": true,
+              "soc_icons_large": false
+            }
           }
         },
         "block_order": [
-          "1601374680247",
           "1601374650582",
-          "1601374580731"
+          "1601374580731",
+          "text_98GiaP"
         ],
         "settings": {
           "lower_menu": "",
