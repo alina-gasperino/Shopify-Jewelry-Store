@@ -49,6 +49,118 @@
         "full_width": true
       }
     },
+    "logo_list_AA3bUY": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_FBJTTD": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/round.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Round",
+            "title": "Round"
+          }
+        },
+        "logo_CWAqyF": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/princess.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Princess",
+            "title": "Princess"
+          }
+        },
+        "logo_BQm47w": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cushion.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Cushion",
+            "title": "Cushion"
+          }
+        },
+        "logo_RjxkLA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/emerald.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Emerald",
+            "title": "Emerald"
+          }
+        },
+        "logo_RxGxEz": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/marquise.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Marquise",
+            "title": "Marquise"
+          }
+        },
+        "logo_8ji9xm": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/oval.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Oval",
+            "title": "Oval"
+          }
+        },
+        "logo_rQGbfw": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/radiant.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Radiant",
+            "title": "Radiant"
+          }
+        },
+        "logo_fQNAdH": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pear.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Pear",
+            "title": "Pear"
+          }
+        },
+        "logo_kLa69i": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/asscher.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Asscher",
+            "title": "Asscher"
+          }
+        },
+        "logo_fTjfC7": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/heart.png",
+            "image_width": 90,
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Heart",
+            "title": "Heart"
+          }
+        }
+      },
+      "block_order": [
+        "logo_FBJTTD",
+        "logo_CWAqyF",
+        "logo_BQm47w",
+        "logo_RjxkLA",
+        "logo_RxGxEz",
+        "logo_8ji9xm",
+        "logo_rQGbfw",
+        "logo_fQNAdH",
+        "logo_kLa69i",
+        "logo_fTjfC7"
+      ],
+      "settings": {
+        "title": "Explore Diamonds",
+        "image_opacity": 100,
+        "use_alt_bg": false
+      }
+    },
     "slideshow_FLXePX": {
       "type": "slideshow",
       "blocks": {
@@ -57,9 +169,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Proper_Diamonds_Footer_Img.png",
             "image_position": "center center",
-            "slide_link": "shopify:\/\/collections",
+            "slide_link": "shopify:\/\/collections\/round",
             "subheading": "",
-            "title": "SHOP OUR COLLECTION",
+            "title": "SHOP OUR RINGS",
             "title_size": 60,
             "text": "",
             "enlarge_text": true,
@@ -215,6 +327,7 @@
   "order": [
     "slideshow_JjCfUg",
     "featured_collection_YpeEB9",
+    "logo_list_AA3bUY",
     "slideshow_FLXePX",
     "collection_list_NLacg6",
     "custom_row_ELtCTQ",

@@ -112,3 +112,13 @@ label.selected {
 #choose-diamond .modal-content .diamond__content--price #add_diamond {
     display: none !important;
 }
+.logo-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width:500px) {
+    .logo-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
