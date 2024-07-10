@@ -122,3 +122,7 @@ label.selected {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.container.page-width-key.key-app-load {
+    display: none;
+}

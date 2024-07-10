@@ -3,7 +3,7 @@
 <head>
   <!-- Symmetry 5.0.0 -->
 
-  <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style">
+  {% comment %} <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style"> {% endcomment %}
   {% render 'head-tag' %}
   <meta name="theme-color" content="{{ settings.btn_col }}">
 
@@ -13,7 +13,7 @@
 
   {% render 'social-meta-tags' %}
 
-  {{ 'styles.css' | asset_url | stylesheet_tag }}
+  {% comment %} {{ 'styles.css' | asset_url | stylesheet_tag }} {% endcomment %}
   {{ 'custom.css' | asset_url | stylesheet_tag }}
 
   <script>
