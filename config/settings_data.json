@@ -941,14 +941,38 @@
     "sections": {
       "header": {
         "type": "header",
+        "blocks": {
+          "menu_promotion_J6MMfB": {
+            "type": "menu-promotion",
+            "settings": {
+              "dropdown_link_title": "Engagement Rings",
+              "image": "shopify:\/\/shop_images\/KID-ER-307_720x_ecfc8ced-3806-4159-8ac3-6478ea95e0a1.webp",
+              "title": "Start with a Setting",
+              "link_url": "shopify:\/\/collections\/engagement-rings"
+            }
+          },
+          "menu_promotion_8aEAmR": {
+            "type": "menu-promotion",
+            "settings": {
+              "dropdown_link_title": "Engagement Rings",
+              "image": "shopify:\/\/shop_images\/ff92282a-7908-4397-b5b6-01b18487c7da.jpg",
+              "title": "Start with a Diamond",
+              "link_url": "https:\/\/properdiamonds.com\/pages\/diamond-detail?pid=6628f7d4fbc6781a2c2da663"
+            }
+          }
+        },
+        "block_order": [
+          "menu_promotion_J6MMfB",
+          "menu_promotion_8aEAmR"
+        ],
         "settings": {
           "logo_img_width_int": 160,
           "enable_sticky": true,
           "menu_linklist": "main-menu",
-          "menu_layout": "inline-menu-left",
-          "nav_featured_link": "Sale",
-          "nav_mob_products_title": "Best Sellers",
-          "nav_mob_products_collection": "",
+          "menu_layout": "underneath",
+          "nav_featured_link": "Engagement Rings",
+          "nav_mob_products_title": "Engagement Rings",
+          "nav_mob_products_collection": "engagement-rings",
           "search_suggestions_title": "",
           "search_suggestions_menu": ""
         }
