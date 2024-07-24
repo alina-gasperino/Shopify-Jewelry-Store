@@ -120,6 +120,24 @@ label.selected {
     border: solid 2px #c6a592;
 }
 
+.menu-promotion__text {
+    text-align: left;
+    padding: 0 0 15px;
+    font-size: .8em;
+    line-height: 1.2em;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation .navigation__columns .navigation__column .navigation__tier-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
 @media screen and (max-width:500px) {
     .logo-list {
         grid-template-columns: repeat(2, 1fr);

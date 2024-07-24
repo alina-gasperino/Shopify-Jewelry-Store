@@ -262,12 +262,12 @@
                         {%- if block.settings.link_url != blank -%}
                           <a class="menu-promotion__link" href="{{ block.settings.link_url }}">
                         {%- endif -%}
-                        <div class="menu-promotion__image">
-                          {%- render 'responsive-image', image: block.settings.image -%}
-                        </div>
                         {%- if block.settings.title != blank -%}
                           <div class="menu-promotion__text">{{ block.settings.title }}</div>
                         {%- endif -%}
+                        <div class="menu-promotion__image">
+                          {%- render 'responsive-image', image: block.settings.image -%}
+                        </div>
                         {%- if block.settings.link_url != blank -%}
                           </a>
                         {%- endif -%}
