@@ -46,7 +46,7 @@
         "rows": 1,
         "use_alt_bg": false,
         "show_view_all": false,
-        "full_width": true
+        "full_width": false
       }
     },
     "logo_list_AA3bUY": {
@@ -155,6 +155,9 @@
         "logo_kLa69i",
         "logo_fTjfC7"
       ],
+      "custom_css": [
+        "a {color: #000;}"
+      ],
       "settings": {
         "title": "Explore Diamonds",
         "image_opacity": 100,
@@ -244,12 +247,13 @@
         "collection_QV9EUB",
         "collection_8WGFXU"
       ],
+      "custom_css": [],
       "settings": {
         "title": "Shop Our Jewelries",
         "enable_carousel": true,
         "grid": 4,
         "use_alt_bg": false,
-        "full_width": true
+        "full_width": false
       }
     },
     "custom_row_ELtCTQ": {
@@ -318,7 +322,7 @@
         "button": "Directions",
         "show_pin": true,
         "show_feature_image": false,
-        "map_address": "620 Newport Center Drive, Suite 1100, Newport Beach California 92660, United States",
+        "map_address": "4 Hutton Centre Drive, Santa Ana CA 92707",
         "api_key": "AIzaSyDlrcQS4-85JSq7PKUIj4naArhdC6ff5uY",
         "map_style": "default"
       }
