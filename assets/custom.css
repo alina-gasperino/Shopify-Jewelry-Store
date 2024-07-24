@@ -116,13 +116,12 @@ label.selected {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+.product-block .image-cont {
+    border: solid 2px #c6a592;
+}
 
 @media screen and (max-width:500px) {
     .logo-list {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-.container.page-width-key.key-app-load {
-    display: none;
 }
