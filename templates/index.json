@@ -170,7 +170,7 @@
         "image_9JkM8A": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Proper_Diamonds_Footer_Img.png",
+            "image": "shopify:\/\/shop_images\/pexels-brooklynn-hossler-12126822.jpg",
             "image_position": "center center",
             "slide_link": "shopify:\/\/collections\/round",
             "subheading": "",
@@ -299,7 +299,7 @@
       ],
       "custom_css": [
         ".fully-spaced-row--medium {margin-top: 0;}",
-        ".flexible-layout--align-center {background: #000;}",
+        ".flexible-layout--align-center {background: #c6a592;}",
         ".flexible-layout .column {padding-left: 0; margin-bottom: 0;}",
         "h1,p {color: #fff;}",
         ".flexible-layout .column.text-row {padding: 0 6em;}",
@@ -307,6 +307,50 @@
       ],
       "settings": {
         "alignment": "middle"
+      }
+    },
+    "text_columns_with_images_GaLN8D": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "text_block_8cfBJ8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/hand-with-ring-in-greenery.jpg",
+            "image_width": 700,
+            "title": "The Hoop Shop",
+            "text": "<p>Your one-stop-shop for perfectly proportioned pairs.<\/p>",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/hoop-earrings"
+          }
+        },
+        "text_block_CBnK7X": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/rose-gold-wedding-ring-with-large-stone.jpg",
+            "image_width": 700,
+            "title": "The Essentials Edit",
+            "text": "<p>Signature pieces to swear by. Your jewelry capsule starts here.<\/p>",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/pendants"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_8cfBJ8",
+        "text_block_CBnK7X"
+      ],
+      "custom_css": [
+        "h2.hometitle {display: none;}",
+        ".flexible-layout .column {padding-left: 0;}",
+        ".flexible-layout{gap:30px;}"
+      ],
+      "settings": {
+        "title": "Text columns with images",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "use_alt_bg": false
       }
     },
     "map": {
@@ -335,6 +379,7 @@
     "slideshow_FLXePX",
     "collection_list_NLacg6",
     "custom_row_ELtCTQ",
+    "text_columns_with_images_GaLN8D",
     "map"
   ]
 }
