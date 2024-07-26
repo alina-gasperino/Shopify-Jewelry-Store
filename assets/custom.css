@@ -130,12 +130,20 @@ label.selected {
     text-transform: uppercase;
     opacity: .7;
 }
+img.diamond_shape {
+    width: 20px;
+}
 
 @media screen and (min-width: 768px) {
     .navigation .navigation__columns .navigation__column .navigation__tier-3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
+    }
+    .navigation .navigation__columns .navigation__column .navigation__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 }
 @media screen and (max-width:500px) {

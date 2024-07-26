@@ -293,6 +293,8 @@
                           <ul class="navigation__tier-3">
                             {% for child_child_link in child_link.links %}
                             <li class="navigation__item{% if featured_links contains child_child_link.title %} featured-link{% endif %}">
+                              {% assign diamond_shape = child_child_link.title | downcase | append: ".webp" %}
+                              <img class="diamond_shape" src="{{ diamond_shape | asset_url }}" />
                               <a class="navigation__link" href="{{ child_child_link.url }}">{{ child_child_link.title }}</a>
                             </li>
                             {% endfor %}
