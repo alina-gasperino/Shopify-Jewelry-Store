@@ -2,7 +2,12 @@
   "sections": {
     "main": {
       "type": "main-contact",
-      "settings": {}
+      "settings": {
+        "show_page_title": false,
+        "use_columns": true,
+        "contact_title": "Contact us",
+        "contact_text": "<p>We're here to help with any questions you may have! <\/p><p>Our jewelry specialists are available 24\/7.<\/p>"
+      }
     }
   },
   "order": [
