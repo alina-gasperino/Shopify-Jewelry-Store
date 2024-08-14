@@ -29,6 +29,9 @@
       "block_order": [
         "bookeasy_app_blocks_pz4xNi"
       ],
+      "custom_css": [
+        ".fully-spaced-row--medium {display: none;}"
+      ],
       "settings": {
         "full_width": false
       }
@@ -37,7 +40,8 @@
       "type": "map",
       "custom_css": [
         ".map-section__map {width: 100%;}",
-        ".map-section__text {opacity: 0; height: 500px;}"
+        ".map-section__text {opacity: 0; height: 500px;}",
+        "@media screen and (max-width:500px) {.map-section__text{display:none; }}"
       ],
       "settings": {
         "color_bg": "#f4f4f4",
