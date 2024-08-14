@@ -34,4 +34,8 @@ jQuery(document).ready(function ($) {
             $(".allsizes").val(ring_size)
         })
     })
+
+    $(".calendar").click(function() {
+        $(".bookeasy-button-container button").click();
+    })
 });

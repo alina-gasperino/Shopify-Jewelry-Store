@@ -38,6 +38,9 @@
           <p><i class="fa fa-commenting-o"></i><a href="sms:{{ section.settings.phone_text }}">Text {{ section.settings.phone_text }}</a></p>
         {% endif %}
       </div>
+      <div class="booking">
+        <button class="calendar">Book Virtual Appointment</button>
+      </div>
     </div>
     <div id="template" class="{% if page.content != blank and section.settings.use_columns %}column righty-form{% endif %}">
       {% form 'contact' %}

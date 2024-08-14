@@ -157,6 +157,12 @@ img.diamond_shape {
 .chat_info_list i {
     margin-right: 10px;
 }
+.bookeasy-appBlock-details {
+    display: none;
+}
+.booking {
+    margin-top: 30px;
+}
 
 @media screen and (min-width: 768px) {
     .navigation .navigation__columns .navigation__column .navigation__tier-3 {
