@@ -134,6 +134,30 @@ img.diamond_shape {
     width: 20px;
 }
 
+.heading {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.heading p {
+    margin-bottom: 0;
+}
+#chat_info, #template {
+    width: 50%;
+    padding: 0 50px;
+}
+.contact_container.container {
+    width: 1200px;
+}
+.chat_info_list a {
+    color: #000;
+}
+.chat_info_list a:hover {
+    color: #964233;
+}
+.chat_info_list i {
+    margin-right: 10px;
+}
+
 @media screen and (min-width: 768px) {
     .navigation .navigation__columns .navigation__column .navigation__tier-3 {
         display: grid;
