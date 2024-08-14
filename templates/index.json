@@ -356,7 +356,8 @@
     "map": {
       "type": "map",
       "custom_css": [
-        ".map-section__map {width: 100%;}"
+        ".map-section__map {width: 100%;}",
+        ".map-section__text {opacity: 0; height: 500px;}"
       ],
       "settings": {
         "color_bg": "#f7f7f8",

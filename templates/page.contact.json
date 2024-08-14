@@ -13,8 +13,32 @@
         "phone_text": "213.344.9905"
       }
     },
+    "1723626188f60685be": {
+      "type": "apps",
+      "blocks": {
+        "bookeasy_app_blocks_pz4xNi": {
+          "type": "shopify:\/\/apps\/bookeasy\/blocks\/app-blocks\/865cd10f-9515-4d8b-8e41-efece9c83f71",
+          "settings": {
+            "bookeasy-app-id": "ijo4ZGca6tvzNoc911FmNG",
+            "bookeasy-app-title": "",
+            "bookeasy-app-subtitle": "",
+            "bookeasy-app-description": ""
+          }
+        }
+      },
+      "block_order": [
+        "bookeasy_app_blocks_pz4xNi"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
     "map_MjEWN3": {
       "type": "map",
+      "custom_css": [
+        ".map-section__map {width: 100%;}",
+        ".map-section__text {opacity: 0; height: 500px;}"
+      ],
       "settings": {
         "color_bg": "#f4f4f4",
         "full_width": true,
@@ -31,6 +55,7 @@
   },
   "order": [
     "main",
+    "1723626188f60685be",
     "map_MjEWN3"
   ]
 }
