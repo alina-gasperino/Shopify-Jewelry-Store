@@ -12,9 +12,25 @@
         "phone_call": "213.344.9905",
         "phone_text": "213.344.9905"
       }
+    },
+    "map_MjEWN3": {
+      "type": "map",
+      "settings": {
+        "color_bg": "#f4f4f4",
+        "full_width": true,
+        "heading": "Our store",
+        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
+        "button": "Directions",
+        "show_pin": true,
+        "show_feature_image": false,
+        "map_address": "4 Hutton Centre Drive, Santa Ana CA 92707",
+        "api_key": "AIzaSyDlrcQS4-85JSq7PKUIj4naArhdC6ff5uY",
+        "map_style": "default"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "map_MjEWN3"
   ]
 }
