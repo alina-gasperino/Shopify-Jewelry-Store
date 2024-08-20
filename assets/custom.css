@@ -27,7 +27,7 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a {
 .clickyboxes li a:hover {
     border-color: transparent;
 }
-.clickyboxes.options--shape li a span, .clickyboxes.options--metal li a span {
+.clickyboxes.options--shape li a span, .clickyboxes.options--metal li a span, .clickyboxes.options--material li a span {
     display: none;
 }
 .clickyboxes.options--diamond li a.active, .clickyboxes.options--diamond li a.active:hover {
