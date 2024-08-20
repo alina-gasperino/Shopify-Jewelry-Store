@@ -1,0 +1,26 @@
+{% assign settingId = product.id %}
+{% assign settingVariantId = product.selected_or_first_available_variant.id %}
+
+<a id="add-diamond-link" href="/pages/ring-builder?stage=Add+Diamond&settingId={{ settingId }}&settingVariantId={{ settingVariantId }}" class="button button--full-width button--primary">Add diamond</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function getQueryParam(param) {
+        var urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    var addDiamondLink = document.getElementById('add-diamond-link');
+
+    if (addDiamondLink) {
+        addDiamondLink.addEventListener('click', function(event) {
+            var variantId = getQueryParam('variant');
+            if (variantId) {
+                var url = new URL(addDiamondLink.href);
+                url.searchParams.set('settingVariantId', variantId);
+                addDiamondLink.href = url.toString();
+            }
+        });
+    }
+});
+</script>
