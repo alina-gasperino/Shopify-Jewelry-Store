@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "17250363695407a524": {
+      "type": "apps",
+      "blocks": {
+        "nivoda_diamond_search_ring_builder_Vi4DmU": {
+          "type": "shopify:\/\/apps\/nivoda-diamond-search\/blocks\/ring_builder\/1818f65a-9917-4ef2-bca9-2424a925fc76",
+          "settings": {
+            "primary_color": "#d7c0b3",
+            "ring_size_guide": "",
+            "ring_size_regions": "UNITED_STATES,UNITED_KINGDOM,AUSTRALIA,ITALY,SPAIN,HONG_KONG",
+            "diamond_type_natural": false,
+            "diamond_type_lab": true,
+            "color_min": "G",
+            "color_max": "D",
+            "clarity_min": "VS2",
+            "clarity_max": "FL",
+            "cut_min": "GD",
+            "cut_max": "ID",
+            "certificate_lab": "GIA,IGI"
+          }
+        }
+      },
+      "block_order": [
+        "nivoda_diamond_search_ring_builder_Vi4DmU"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17250363695407a524"
+  ]
+}

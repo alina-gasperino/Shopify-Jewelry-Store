@@ -1066,37 +1066,10 @@
     },
     "content_for_index": [],
     "blocks": {
-      "15069410091156550825": {
-        "type": "shopify:\/\/apps\/diamond-ring-builder-jewelry\/blocks\/diamond-ring-builder\/aa1f04d9-134c-4595-84f5-3ef5b35d5851",
-        "disabled": false,
-        "settings": {
-          "normalPrimary": "#7646D7",
-          "normalSecondary": "#FFFFFF",
-          "hoverPrimary": "#8357DB",
-          "hoverSecondary": "#ECE6FA",
-          "primaryBackground": "#EBE2FB",
-          "secondaryBackground": "#EFEFEF",
-          "primaryText": "#000000",
-          "secondaryText": "#4A4A4A",
-          "custom_css": "",
-          "review_page_hide": "",
-          "jquery_cdn": true
-        }
-      },
       "15659862187755629035": {
         "type": "shopify:\/\/apps\/bookeasy\/blocks\/app-embed\/865cd10f-9515-4d8b-8e41-efece9c83f71",
         "disabled": false,
         "settings": {}
-      },
-      "17920835415960095625": {
-        "type": "shopify:\/\/apps\/swatch-king\/blocks\/variant-swatch-king\/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
-        "disabled": true,
-        "settings": {
-          "alignment": "left",
-          "swatch_location": "After image",
-          "switch_on_hover": true,
-          "preselect_variant": false
-        }
       }
     }
   }
