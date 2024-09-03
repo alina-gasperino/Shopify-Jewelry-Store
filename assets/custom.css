@@ -164,6 +164,19 @@ img.diamond_shape {
     margin-top: 30px;
 }
 
+.product-card button, .view-details-content button {
+    color: #000;
+    padding: 1em;
+}
+
+.template-suffix-ring-builder button {
+    color: #000;
+}
+
+.template-suffix-ring-builder button svg {
+    fill: transparent;
+}
+
 @media screen and (min-width: 768px) {
     .navigation .navigation__columns .navigation__column .navigation__tier-3 {
         display: grid;
