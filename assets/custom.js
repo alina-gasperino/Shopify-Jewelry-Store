@@ -38,4 +38,10 @@ jQuery(document).ready(function ($) {
     $(".calendar").click(function() {
         $(".bookeasy-button-container button").click();
     })
+    
+    let url = window.location.href;
+    var stage = url.split("stage=")[1];
+    if(stage.indexOf("Complete") != -1) {
+        console.log("Complete Ring Page")
+    }
 });
