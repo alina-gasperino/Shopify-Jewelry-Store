@@ -13,9 +13,9 @@
         "nivoda_diamond_search_ring_builder_Vi4DmU": {
           "type": "shopify:\/\/apps\/nivoda-diamond-search\/blocks\/ring_builder\/1818f65a-9917-4ef2-bca9-2424a925fc76",
           "settings": {
-            "primary_color": "#000000",
+            "primary_color": "#d7c0b3",
             "ring_size_guide": "",
-            "ring_size_regions": "UNITED_STATES,UNITED_KINGDOM,AUSTRALIA,ITALY,SPAIN,HONG_KONG",
+            "ring_size_regions": "UNITED_STATES",
             "diamond_type_natural": false,
             "diamond_type_lab": true,
             "color_min": "G",
