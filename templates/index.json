@@ -57,7 +57,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/round.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Round",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=round",
             "title": "Round"
           }
         },
@@ -66,7 +66,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/princess.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Princess",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=princess",
             "title": "Princess"
           }
         },
@@ -75,7 +75,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/cushion.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Cushion",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=cushion",
             "title": "Cushion"
           }
         },
@@ -84,7 +84,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/emerald.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Emerald",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=emerald",
             "title": "Emerald"
           }
         },
@@ -93,7 +93,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/marquise.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Marquise",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=marquise",
             "title": "Marquise"
           }
         },
@@ -102,7 +102,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/oval.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Oval",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=oval",
             "title": "Oval"
           }
         },
@@ -111,7 +111,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/radiant.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Radiant",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=radiant",
             "title": "Radiant"
           }
         },
@@ -120,7 +120,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/pear.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Pear",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=pear",
             "title": "Pear"
           }
         },
@@ -129,7 +129,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/asscher.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Asscher",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=asscher",
             "title": "Asscher"
           }
         },
@@ -138,7 +138,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/heart.png",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamond?shape=Heart",
+            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=heart",
             "title": "Heart"
           }
         }
