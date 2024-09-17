@@ -1090,6 +1090,26 @@
         "type": "shopify:\/\/apps\/bookeasy\/blocks\/app-embed\/865cd10f-9515-4d8b-8e41-efece9c83f71",
         "disabled": false,
         "settings": {}
+      },
+      "15069410091156550825": {
+        "type": "shopify:\/\/apps\/diamond-ring-builder-jewelry\/blocks\/diamond-ring-builder\/aa1f04d9-134c-4595-84f5-3ef5b35d5851",
+        "disabled": false,
+        "settings": {
+          "headingfontSize": 30,
+          "descfontSize": 14,
+          "normalPrimary": "#7646D7",
+          "normalSecondary": "#FFFFFF",
+          "hoverPrimary": "#8357DB",
+          "backgroundColor": "#F6F6F6",
+          "hoverSecondary": "#ECE6FA",
+          "primaryBackground": "#EBE2FB",
+          "secondaryBackground": "#EFEFEF",
+          "primaryText": "#000000",
+          "secondaryText": "#000000",
+          "custom_css": "",
+          "review_page_hide": "",
+          "jquery_cdn": true
+        }
       }
     }
   }

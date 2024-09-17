@@ -34,7 +34,6 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_quantity_selector": false,
             "enable_payment_button": false,
@@ -46,6 +45,7 @@
         },
         "custom_liquid_AWpcEF": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% assign settingId = product.id %}\n{% assign settingVariantId = product.selected_or_first_available_variant.id %}\n\n<a id=\"add-diamond-link\" href=\"\/pages\/ring-builder?stage=Add+Diamond&settingId={{ settingId }}&settingVariantId={{ settingVariantId }}\" class=\"button button--full-width button--primary\">Add diamond<\/a>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    function getQueryParam(param) {\n        var urlParams = new URLSearchParams(window.location.search);\n        return urlParams.get(param);\n    }\n\n    var addDiamondLink = document.getElementById('add-diamond-link');\n\n    if (addDiamondLink) {\n        addDiamondLink.addEventListener('click', function(event) {\n            var variantId = getQueryParam('variant');\n            if (variantId) {\n                var url = new URL(addDiamondLink.href);\n                url.searchParams.set('settingVariantId', variantId);\n                addDiamondLink.href = url.toString();\n            }\n        });\n    }\n});\n<\/script>",
             "show_in_quickbuy": false
