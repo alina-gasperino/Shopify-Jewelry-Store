@@ -1,6 +1,17 @@
+@font-face {
+    font-family: "Castro";
+    src: url({{ 'castro.woff2' | asset_url }}) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.price-area .h4-style {
+  font-family: "Castro";
+}
 .clickyboxes li a.active, .clickyboxes li a.active:hover {
     border-color: #54787c;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .swatches .clickyboxes {
     width: fit-content;
@@ -16,6 +27,49 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
     padding: 0 23px;
     border-color: transparent;
 }
+.clickyboxes.options--carat-total-weight li a, .clickyboxes.options--carat-total-weight li a:hover {
+  border-color: #54787c;
+}
+.clickyboxes.options--carat-total-weight li a.active {
+  background-color: #54787c;
+  color: #ffffff;
+}
+.clickyboxes .slick-prev, .clickyboxes .slick-next {
+  display:none !important;
+}
+.prev_var, .next_var {
+    background: transparent;
+    color: #54787c;
+    border: solid 1px #54787c;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+}
+.prev_var:hover, .next_var:hover {
+  background: transparent;
+  border: solid 1px #54787c;
+}
+.slick-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.prev_var {
+    position: absolute;
+    left: -14px;
+    z-index: 9999;
+    bottom: 16px;
+}
+button.next_var {
+    position: absolute;
+    right: 10px;
+    z-index: 9999;
+    bottom: 16px;
+}
+.options--carat-total-weight {
+  margin-left:30px;
+  margin-right: 30px;
+}
 select[data-listed][data-colour-swatch=true]+.clickyboxes a {
     padding-left: 23px;
 }
@@ -27,7 +81,10 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a {
 .clickyboxes li a:hover {
     border-color: transparent;
 }
-.clickyboxes.options--shape li a span, .clickyboxes.options--metal li a span, .clickyboxes.options--material li a span {
+.clickyboxes.options--metal li a:hover {
+    border-color: #737373;
+}
+.clickyboxes.options--shape li a span, .clickyboxes.options--material li a span {
     display: none;
 }
 .clickyboxes.options--diamond li a.active, .clickyboxes.options--diamond li a.active:hover {
@@ -112,6 +169,9 @@ label.selected {
 #choose-diamond .modal-content .diamond__content--price #add_diamond {
     display: none !important;
 }
+#choose-diamond-1 .diamond__content--price a:not(:first-child) {
+    display: none !important;
+}
 .logo-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -181,7 +241,43 @@ img.diamond_shape {
 .template-suffix-ring-builder button svg {
     fill: transparent;
 }
-
+.bookeasy-back-btn, .bookeasy-next-btn, .bookeasy-widget-close-button {
+  height: auto;
+}
+.product_medias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.clickyboxes li a.unavailable {
+    background-color: transparent;
+    border-color: #0000000d;
+}
+.clickyboxes.options--diamond-weight li a.active {
+    border-radius: 0;
+    background-color: #54787c;
+    color: #fff;
+}
+.clickyboxes.options--diamond-weight li a.unavailable.active {
+    background-color: #0000000d;
+    color: #000;
+}
+table.diamond_info {
+    width: 100%;
+}
+table.diamond_info td {
+  padding: 6px 0;
+}
+.product_title {
+  font-size:24px;
+  font-weight:bold;
+}
+.price-area .h4-style {
+  font-size:24px;
+}
+.price-descriptors {
+  font-size: 14px;
+}
 @media screen and (min-width: 768px) {
     .navigation .navigation__columns .navigation__column .navigation__tier-3 {
         display: grid;

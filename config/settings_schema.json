@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Symmetry",
-    "theme_author": "Clean Canvas",
+    "theme_name": "Proper Diamonds",
+    "theme_author": "Alina Gasperino",
     "theme_version": "5.0.0",
-    "theme_documentation_url": "http:\/\/cleancanvas.co.uk\/support\/symmetry\/",
-    "theme_support_url": "http:\/\/cleancanvas.co.uk\/support\/symmetry\/"
+    "theme_documentation_url": "https:\/\/github.com\/alina-gasperino\/Shopify-Jewelry-Store",
+    "theme_support_url": "https:\/\/github.com\/alina-gasperino\/Shopify-Jewelry-Store"
   },
   {
     "name": "Layout",
@@ -692,7 +692,7 @@
         "type": "checkbox",
         "id": "enable_payment_button",
         "label": "Show dynamic checkout button",
-        "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+        "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
         "default": true
       },
       {
@@ -862,7 +862,7 @@
       },
       {
         "type": "paragraph",
-        "content": "This shows a circle of color beside variants, and also within a filter group with the same name. [Learn more](https:\/\/cleancanvas.co.uk\/support\/symmetry)"
+        "content": "This shows a circle of color beside variants, and also within a filter group with the same name."
       },
       {
         "type": "text",

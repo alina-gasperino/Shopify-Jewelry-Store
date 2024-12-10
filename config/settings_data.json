@@ -904,9 +904,9 @@
     "foot_text_col": "#000000",
     "foot_heading_col": "#000000",
     "foot_divider_col": "#ecd6d1",
-    "type_heading_font": "serif",
+    "type_heading_font": "figtree_n4",
     "capitalize_headings": false,
-    "type_base_font": "futura_n4",
+    "type_base_font": "figtree_n4",
     "type_nav_font": "futura_n5",
     "type_logo_font": "futura_n4",
     "font_size_heading_int": 48,
@@ -920,17 +920,17 @@
     "prod_thumb_shape": "square",
     "prod_thumb_text_align": "left",
     "prod_thumb_hover_image": true,
-    "prod_thumb_options_names": "Color, Size",
+    "prod_thumb_options_names": "Carat Total Weight",
     "quickbuy_style": "off",
     "enable_payment_button": false,
     "prod_block_label_loc": "top left",
-    "prod_stock_warn_show": true,
+    "prod_stock_warn_show": false,
     "prod_stock_warn_limit_int": 5,
     "prod_sale_show": true,
     "prod_sold_out_show": true,
     "variant_style": "listed",
     "swatch_enabled": true,
-    "swatch_option_name": "Color,Metal,Shape,Material",
+    "swatch_option_name": "Color,Shape,Material",
     "swatch_images": true,
     "search_type": "product,article,page",
     "enable_live_search": true,
@@ -943,21 +943,39 @@
       "header": {
         "type": "header",
         "blocks": {
+          "menu_promotion_xPJNwh": {
+            "type": "menu-promotion",
+            "settings": {
+              "dropdown_link_title": "Engagement Rings",
+              "image": "shopify:\/\/shop_images\/solitaire.svg",
+              "title": "Solitaire",
+              "link_url": "shopify:\/\/products\/solitaire-engagement-ring"
+            }
+          },
           "menu_promotion_J6MMfB": {
             "type": "menu-promotion",
             "settings": {
               "dropdown_link_title": "Engagement Rings",
-              "image": "shopify:\/\/shop_images\/KID-ER-307_720x_ecfc8ced-3806-4159-8ac3-6478ea95e0a1.webp",
-              "title": "Solitaire Hidden Halo",
-              "link_url": "shopify:\/\/products\/solitaire-hidden-halo-engagement-ring-1"
+              "image": "shopify:\/\/shop_images\/halo-ring.svg",
+              "title": "Halo",
+              "link_url": "shopify:\/\/products\/halo-engagement-ring"
+            }
+          },
+          "menu_promotion_z3qeJC": {
+            "type": "menu-promotion",
+            "settings": {
+              "dropdown_link_title": "Engagement Rings",
+              "image": "shopify:\/\/shop_images\/hidden-halo.svg",
+              "title": "Hidden Halo",
+              "link_url": "shopify:\/\/products\/hidden-halo-engagement-ring"
             }
           },
           "menu_promotion_8aEAmR": {
             "type": "menu-promotion",
             "settings": {
               "dropdown_link_title": "Engagement Rings",
-              "image": "shopify:\/\/shop_images\/KID-ER-313_51a28e4f-170c-4a90-ae55-57e5031e352e.jpg",
-              "title": "Half Bezel Solitaire",
+              "image": "shopify:\/\/shop_images\/bezel.svg",
+              "title": "Bezel",
               "link_url": "shopify:\/\/products\/half-bezel-solitaire-ring"
             }
           },
@@ -965,23 +983,25 @@
             "type": "menu-promotion",
             "settings": {
               "dropdown_link_title": "Engagement Rings",
-              "image": "shopify:\/\/shop_images\/KID-ER-299_cc9ee609-2e76-407d-81e6-60deee835290.jpg",
-              "title": "MicroPave Style",
-              "link_url": "shopify:\/\/products\/stunning-micropave-style-engagement-ring"
+              "image": "shopify:\/\/shop_images\/diamond-band.svg",
+              "title": "Diamond Band",
+              "link_url": "shopify:\/\/products\/band-engagement-ring"
             }
           },
           "menu_promotion_enjV4B": {
             "type": "menu-promotion",
             "settings": {
               "dropdown_link_title": "Engagement Rings",
-              "image": "shopify:\/\/shop_images\/KID-ER-261_a7b3bfe8-c97e-4196-9c41-587d736ca92b.jpg",
-              "title": "Three Stone Ring",
-              "link_url": "shopify:\/\/products\/impressive-and-stunning-three-stone-engagement-ring"
+              "image": "shopify:\/\/shop_images\/three-stone.svg",
+              "title": "Three Stone",
+              "link_url": "shopify:\/\/products\/three-stone-engagement-ring"
             }
           }
         },
         "block_order": [
+          "menu_promotion_xPJNwh",
           "menu_promotion_J6MMfB",
+          "menu_promotion_z3qeJC",
           "menu_promotion_8aEAmR",
           "menu_promotion_D7tr37",
           "menu_promotion_enjV4B"
@@ -993,8 +1013,8 @@
           "menu_linklist": "main-menu",
           "menu_layout": "underneath",
           "nav_featured_link": "Engagement Rings",
-          "nav_mob_products_title": "Engagement Rings",
-          "nav_mob_products_collection": "engagement-rings",
+          "nav_mob_products_title": "",
+          "nav_mob_products_collection": "",
           "search_suggestions_title": "",
           "search_suggestions_menu": ""
         }
@@ -1018,8 +1038,8 @@
           "1601374580731": {
             "type": "newsletter",
             "settings": {
-              "title": "Newsletter",
-              "text": "<p>Sign up for exclusive offers, original stories, activism awareness, events and more.<\/p>",
+              "title": "Exclusive Experience",
+              "text": "<p>Sign up for exclusive offers, events and more.<\/p>",
               "show_social_icons": true,
               "soc_icons_large": false
             }
@@ -1027,8 +1047,8 @@
           "text_98GiaP": {
             "type": "text",
             "settings": {
-              "title": "Talk about your store",
-              "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
+              "title": "Store Location",
+              "text": "<p>4 Hutton Centre Drive, Suite 155, South Coast Metro, California 92707 <\/p>",
               "image_width": 100,
               "show_social_icons": true,
               "soc_icons_large": false
@@ -1042,23 +1062,23 @@
         ],
         "settings": {
           "lower_menu": "",
-          "show_payment_icons": true,
-          "show_locale_selector": true,
-          "show_currency_selector": true
+          "show_payment_icons": false,
+          "show_locale_selector": false,
+          "show_currency_selector": false
         }
       },
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
           "announcement_show": true,
-          "announcement_text": "Announce something here",
+          "announcement_text": "We Exclusively Carry GIA VS+ Colorless Stones for Engagement Rings & Stud Earrings",
           "announcement_link": "",
           "announcement_bar_col": "#d7c0b3",
           "announcement_text_col": "#000000",
-          "show_social_icons": true,
+          "show_social_icons": false,
           "menu": "",
-          "show_locale_selector": true,
-          "show_currency_selector": true
+          "show_locale_selector": false,
+          "show_currency_selector": false
         }
       },
       "store-messages": {
@@ -1097,17 +1117,18 @@
         "settings": {
           "headingfontSize": 30,
           "descfontSize": 14,
-          "normalPrimary": "#7646D7",
-          "normalSecondary": "#FFFFFF",
-          "hoverPrimary": "#8357DB",
-          "backgroundColor": "#F6F6F6",
-          "hoverSecondary": "#ECE6FA",
-          "primaryBackground": "#EBE2FB",
-          "secondaryBackground": "#EFEFEF",
+          "normalPrimary": "#c6a592",
+          "normalSecondary": "#ffffff",
+          "hoverPrimary": "#c6a592",
+          "backgroundColor": "#f6f6f6",
+          "hoverSecondary": "#ffffff",
+          "primaryBackground": "#ffffff",
+          "secondaryBackground": "#ffffff",
           "primaryText": "#000000",
           "secondaryText": "#000000",
           "custom_css": "",
           "review_page_hide": "",
+          "hide_on_byor_ring": "",
           "jquery_cdn": true
         }
       }

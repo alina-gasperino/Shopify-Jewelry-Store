@@ -2,7 +2,108 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
-      "settings": {}
+      "blocks": {
+        "image_x3ykqx": {
+          "type": "image",
+          "settings": {
+            "collection": "rings"
+          }
+        },
+        "image_KmkJnX": {
+          "type": "image",
+          "settings": {
+            "collection": "necklaces"
+          }
+        },
+        "image_Entcxz": {
+          "type": "image",
+          "settings": {
+            "collection": "bracelets"
+          }
+        },
+        "image_nt3w3h": {
+          "type": "image",
+          "settings": {
+            "collection": "earrings"
+          }
+        },
+        "image_za37An": {
+          "type": "image",
+          "settings": {
+            "collection": "ready-to-ship-engagement-rings"
+          }
+        },
+        "image_V3bfBD": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "collection": "engagement-rings",
+            "image": "shopify:\/\/shop_images\/C00Ring1RD2TRIL4.68ct_1RD_4ct_6.2g18KWM-JRD0554.jpg"
+          }
+        },
+        "image_xjYGRH": {
+          "type": "image",
+          "settings": {
+            "collection": "eternity-band"
+          }
+        },
+        "image_VNzncd": {
+          "type": "image",
+          "settings": {
+            "collection": "studs"
+          }
+        },
+        "image_JJrMTk": {
+          "type": "image",
+          "settings": {
+            "collection": "cross"
+          }
+        },
+        "image_wYdWXV": {
+          "type": "image",
+          "settings": {
+            "collection": "dog-tags"
+          }
+        },
+        "image_ngMkh6": {
+          "type": "image",
+          "settings": {
+            "collection": "fashion-rings"
+          }
+        },
+        "image_phdbLq": {
+          "type": "image",
+          "settings": {
+            "collection": "hoop-earrings"
+          }
+        },
+        "image_QkVkiL": {
+          "type": "image",
+          "settings": {
+            "collection": "pendants"
+          }
+        }
+      },
+      "block_order": [
+        "image_x3ykqx",
+        "image_KmkJnX",
+        "image_Entcxz",
+        "image_nt3w3h",
+        "image_za37An",
+        "image_V3bfBD",
+        "image_xjYGRH",
+        "image_VNzncd",
+        "image_JJrMTk",
+        "image_wYdWXV",
+        "image_ngMkh6",
+        "image_phdbLq",
+        "image_QkVkiL"
+      ],
+      "settings": {
+        "title": "Our collections",
+        "display_type": "selected",
+        "grid": 4
+      }
     }
   },
   "order": [

@@ -37,9 +37,12 @@
         {% if section.settings.phone_text != blank %}
           <p><i class="fa fa-commenting-o"></i><a href="sms:{{ section.settings.phone_text }}">Text {{ section.settings.phone_text }}</a></p>
         {% endif %}
+        {% if section.settings.address != blank %}
+          <p><i class="fa fa-map-marker"></i><a href="https://maps.app.goo.gl/TLFQAF7zRx5TAd9A9" target="_blank">{{ section.settings.address }}</a></p>
+        {% endif %}
       </div>
       <div class="booking">
-        <button class="calendar">Book Virtual Appointment</button>
+        <button class="calendar">Book Appointment</button>
       </div>
     </div>
     <div id="template" class="{% if page.content != blank and section.settings.use_columns %}column righty-form{% endif %}">
@@ -129,6 +132,12 @@
         "id": "phone_text",
         "label": "Text",
         "default": "213.344.9905"
+      },
+      {
+        "type": "text",
+        "id": "address",
+        "label": "Address",
+        "default": "4 Hutton Centre Drive, Suite 155, Santa Ana CA 92707"
       }
     ]
   }

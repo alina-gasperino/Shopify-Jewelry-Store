@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ request.locale.iso_code }}">
 <head>
-  <!-- Symmetry 5.0.0 -->
+  <!-- Proper Diamonds 5.0.0 -->
 
   <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
   {% render 'head-tag' %}
   <meta name="theme-color" content="{{ settings.btn_col }}">
 
@@ -96,6 +97,7 @@
   {% section 'store-messages' %}
 
   <main id="content" role="main">
+    <div class="main-content"></div>
     <div class="container cf">
 
       {{ content_for_layout }}
@@ -115,5 +117,7 @@
   {{ 'vendor.js'  | asset_url | script_tag }}
   {{ 'theme.js'  | asset_url | script_tag }}
   {{ 'custom.js'  | asset_url | script_tag }}
+  
 </body>
+  <script defer src="https://connect.podium.com/widget.js#ORG_TOKEN=e9e45c8d-dc7c-44d0-9bcd-fdfe93118fdf" id="podium-widget" data-organization-api-token="e9e45c8d-dc7c-44d0-9bcd-fdfe93118fdf"></script>
 </html>

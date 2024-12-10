@@ -6,7 +6,7 @@
         "image_ppx3qz": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Proper_Diamonds_Main_Img_4.png",
+            "image": "shopify:\/\/shop_images\/properdiamonds-_final_edit-6.jpg",
             "image_position": "center center",
             "slide_link": "shopify:\/\/collections",
             "subheading": "",
@@ -17,10 +17,26 @@
             "button_label": "Shop Now",
             "text_alignment": "bottom center"
           }
+        },
+        "image_tk7aAU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/properdiamonds-_final_edit-4.jpg",
+            "image_position": "top center",
+            "slide_link": "shopify:\/\/collections",
+            "subheading": "",
+            "title": "Shop Stud Earrings",
+            "title_size": 60,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Shop Now",
+            "text_alignment": "bottom center"
+          }
         }
       },
       "block_order": [
-        "image_ppx3qz"
+        "image_ppx3qz",
+        "image_tk7aAU"
       ],
       "settings": {
         "height": "full",
@@ -32,14 +48,14 @@
         "slide_transition": "fade",
         "slide_navigation": "arrows",
         "autoplay": true,
-        "autoplay_speed": 7
+        "autoplay_speed": 5
       }
     },
     "featured_collection_YpeEB9": {
       "type": "featured-collection",
       "settings": {
-        "title": "Build your own Engagement Rings",
-        "collection": "engagement-rings",
+        "title": "Ready To Ship Engagement Rings",
+        "collection": "ready-to-ship-engagement-rings",
         "show_vendor": false,
         "enable_carousel": false,
         "grid": 3,
@@ -55,90 +71,90 @@
         "logo_FBJTTD": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/round.png",
+            "image": "shopify:\/\/shop_images\/round.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=round",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Round",
             "title": "Round"
           }
         },
         "logo_CWAqyF": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/princess.png",
+            "image": "shopify:\/\/shop_images\/princess.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=princess",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Princess",
             "title": "Princess"
           }
         },
         "logo_BQm47w": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cushion.png",
+            "image": "shopify:\/\/shop_images\/cushion.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=cushion",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Cushion",
             "title": "Cushion"
           }
         },
         "logo_RjxkLA": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/emerald.png",
+            "image": "shopify:\/\/shop_images\/emerald.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=emerald",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Emerald",
             "title": "Emerald"
           }
         },
         "logo_RxGxEz": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/marquise.png",
+            "image": "shopify:\/\/shop_images\/marquise.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=marquise",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Marquise",
             "title": "Marquise"
           }
         },
         "logo_8ji9xm": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/oval.png",
+            "image": "shopify:\/\/shop_images\/oval.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=oval",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Oval",
             "title": "Oval"
           }
         },
         "logo_rQGbfw": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/radiant.png",
+            "image": "shopify:\/\/shop_images\/radiant.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=radiant",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Radiant",
             "title": "Radiant"
           }
         },
         "logo_fQNAdH": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pear.png",
+            "image": "shopify:\/\/shop_images\/pear.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=pear",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Pear",
             "title": "Pear"
           }
         },
         "logo_kLa69i": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/asscher.png",
+            "image": "shopify:\/\/shop_images\/asscher.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=asscher",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Asscher",
             "title": "Asscher"
           }
         },
         "logo_fTjfC7": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/heart.png",
+            "image": "shopify:\/\/shop_images\/heart.svg",
             "image_width": 90,
-            "link": "https:\/\/properdiamonds.com\/pages\/nivoda-feed?shapes=heart",
+            "link": "https:\/\/properdiamonds.com\/pages\/lab-diamonds?shape=Heart",
             "title": "Heart"
           }
         }
@@ -155,11 +171,12 @@
         "logo_kLa69i",
         "logo_fTjfC7"
       ],
+      "disabled": true,
       "custom_css": [
         "a {color: #000;}"
       ],
       "settings": {
-        "title": "Explore Diamonds",
+        "title": "Loose Diamonds",
         "image_opacity": 100,
         "use_alt_bg": false
       }
@@ -170,9 +187,9 @@
         "image_9JkM8A": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pexels-brooklynn-hossler-12126822.jpg",
+            "image": "shopify:\/\/shop_images\/properdiamonds-_final_edit-5.jpg",
             "image_position": "center center",
-            "slide_link": "shopify:\/\/collections\/round",
+            "slide_link": "shopify:\/\/collections\/rings",
             "subheading": "",
             "title": "SHOP OUR RINGS",
             "title_size": 60,
@@ -225,27 +242,13 @@
           "settings": {
             "collection": "necklaces"
           }
-        },
-        "collection_QV9EUB": {
-          "type": "collection",
-          "settings": {
-            "collection": "pendants"
-          }
-        },
-        "collection_8WGFXU": {
-          "type": "collection",
-          "settings": {
-            "collection": "engagement-rings"
-          }
         }
       },
       "block_order": [
         "collection_qTMADe",
         "collection_g44N69",
         "collection_PdRPHd",
-        "collection_H6XBUN",
-        "collection_QV9EUB",
-        "collection_8WGFXU"
+        "collection_H6XBUN"
       ],
       "custom_css": [],
       "settings": {
@@ -316,24 +319,24 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/hand-with-ring-in-greenery.jpg",
+            "image": "shopify:\/\/shop_images\/properdiamonds-_final_edit-2.jpg",
             "image_width": 700,
-            "title": "The Hoop Shop",
+            "title": "Essential Earrings",
             "text": "<p>Your one-stop-shop for perfectly proportioned pairs.<\/p>",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/hoop-earrings"
+            "link": "shopify:\/\/collections\/earrings"
           }
         },
         "text_block_CBnK7X": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/rose-gold-wedding-ring-with-large-stone.jpg",
+            "image": "shopify:\/\/shop_images\/properdiamonds-_final_edit-4.jpg",
             "image_width": 700,
-            "title": "The Essentials Edit",
+            "title": "Necklace Collection",
             "text": "<p>Signature pieces to swear by. Your jewelry capsule starts here.<\/p>",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/pendants"
+            "link": "shopify:\/\/collections\/necklaces"
           }
         }
       },

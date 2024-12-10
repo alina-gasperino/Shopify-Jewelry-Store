@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product-engagement",
+      "type": "main-product-new",
       "blocks": {
         "title": {
           "type": "title",
@@ -13,34 +13,18 @@
             "show_tax_and_shipping": false
           }
         },
-        "vendor": {
-          "type": "vendor",
+        "info_tV7BWY": {
+          "type": "info",
           "settings": {}
-        },
-        "divider": {
-          "type": "divider",
-          "settings": {
-            "show_in_quickbuy": false
-          }
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "show_single": false,
             "show_size_chart": false,
             "size_chart_variant": "Size",
             "size_chart_page": ""
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": false,
-            "enable_payment_button": true,
-            "show_backorder_text": true,
-            "show_inventory_notice": false,
-            "inventory_notice_threshold": 10,
-            "show_pickup_availability": true
           }
         },
         "description": {
@@ -50,16 +34,29 @@
             "open_tab": false,
             "show_in_quickbuy": false
           }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_inventory_notice": false,
+            "inventory_notice_threshold": 10,
+            "show_pickup_availability": true
+          }
         }
       },
       "block_order": [
         "title",
         "price",
-        "vendor",
-        "divider",
+        "info_tV7BWY",
         "variant_picker",
-        "buy_buttons",
-        "description"
+        "description",
+        "buy_buttons"
+      ],
+      "custom_css": [
+        ".buy-buttons-row .quantity-wrapper,.buy-buttons-row .quantity-submit-row label {display: none;}"
       ],
       "settings": {
         "show_breadcrumbs": true,
