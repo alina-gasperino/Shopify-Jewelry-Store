@@ -920,6 +920,7 @@
     "prod_thumb_shape": "square",
     "prod_thumb_text_align": "left",
     "prod_thumb_hover_image": true,
+    "prod_thumb_show_options": true,
     "prod_thumb_options_names": "Carat Total Weight",
     "quickbuy_style": "off",
     "enable_payment_button": false,
