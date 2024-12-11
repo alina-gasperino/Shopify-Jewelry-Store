@@ -140,14 +140,17 @@
                       assign is_swatch = false
                     endif
                   -%}
-                  <div class="product-block-options{% if is_swatch %} product-block-options--swatch{% endif %}" data-option-name="{{ product_option.name | escape }}">
+                  <p>{{ product_option.name | escape }}</p>                  
+                  <div class="product-block-options{% if is_swatch %} product-block-options--swatch{% endif %}" data-option-name="{{ product_option.name | escape }}" style="padding-left: 50px;">
+                    <button class="prev_var"><i class="fa fa-angle-left" style="font-size:32px"></i></button>
                     <div class="product-block-options__inner">
                       {%- if product.options.size == 1 -%}
                         {%- for variant in product.variants -%}
                           <span class="product-block-options__item{% unless variant.available %} product-block-options__item--unavailable{% endunless %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% endif %}"
                           data-option-item="{{ variant.title | downcase | escape }}"
                           {% if variant.featured_media %}data-media="{{ variant.featured_media.id }}"{% endif %}
-                          {% if is_swatch %}{% if settings.swatch_images %}data-bgset="{{ variant.title | handle | append: '.png' | file_img_url: '48x48', crop: 'center' }}"{% else %}style="background-color:{{ variant.title | downcase | remove: ' ' | escape }}"{% endif %}{% endif %}><span class="product-block-options__item__text">{{ variant.title }}</span></span>
+                          {% if is_swatch %}{% if settings.swatch_images %}data-bgset="{{ variant.title | handle | append: '.png' | file_img_url: '48x48', crop: 'center' }}"{% else %}style="background-color:{{ variant.title | downcase | remove: ' ' | escape }}"{% endif %}{% endif %}>
+                            <span class="product-block-options__item__text">{{ variant.title }}</span></span>
                         {%- endfor -%}
                         {%- if product.variants.size > option_limit and is_swatch -%}
                           {%- assign remaining = product.variants.size | minus: option_limit -%}
@@ -175,7 +178,9 @@
                           <span class="product-block-options__item{% if is_unavailable %} product-block-options__item--unavailable{% endif %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% endif %}"
                             data-option-item="{{ product_option_value | downcase | escape }}"
                             {% if option_value_variant.featured_media %}data-media="{{ option_value_variant.featured_media.id }}"{% endif %}
-                            {% if is_swatch %}{% if settings.swatch_images %}data-bgset="{{ product_option_value | handle | append: '.png' | file_img_url: '48x48', crop: 'center' }}"{% else %}style="background-color:{{ product_option_value | downcase | remove: ' ' | escape }}"{% endif %}{% endif %}><span class="product-block-options__item__text">{{ product_option_value }}</span></span>
+                            {% if is_swatch %}
+                              {% if settings.swatch_images %}data-bgset="{{ product_option_value | handle | append: '.png' | file_img_url: '48x48', crop: 'center' }}"{% else %}style="background-color:{{ product_option_value | downcase | remove: ' ' | escape }}"{% endif %}
+                              {% endif %}><span class="product-block-options__item__text">{{ product_option_value }}</span></span>
                         {%- endfor -%}
                         {%- if product_option.values.size > option_limit and is_swatch -%}
                           {%- assign remaining = product_option.values.size | minus: option_limit -%}
@@ -183,7 +188,8 @@
                         {%- endif -%}
                       {%- endif -%}
                     </div>
-                  </div>
+                    <button class="next_var"><i class="fa fa-angle-right" style="font-size:32px"></i></button>
+                  </div>                  
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}

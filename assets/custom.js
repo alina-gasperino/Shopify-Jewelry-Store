@@ -47,16 +47,23 @@ jQuery(document).ready(function ($) {
         arrows: true,
         infinite: false
     });
+    $('.template-suffix-stud .product-block-options__inner').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: true,
+        infinite: false
+    });
     function updateClickableButtons() {
-        $(".prev_var").toggleClass("slick-disabled", $(".options--carat-total-weight .slick-prev").attr("aria-disabled") === "true");
-        $(".next_var").toggleClass("slick-disabled", $(".options--carat-total-weight .slick-next").attr("aria-disabled") === "true");
+        $(".prev_var").toggleClass("slick-disabled", $(".slick-slider .slick-prev").attr("aria-disabled") === "true");
+        $(".next_var").toggleClass("slick-disabled", $(".slick-slider .slick-next").attr("aria-disabled") === "true");
     }
     
     updateClickableButtons();
     
     $(".prev_var, .next_var").click(function() {
         const isPrev = $(this).hasClass("prev_var");
-        $(".options--carat-total-weight ." + (isPrev ? "slick-prev" : "slick-next")).click();
+        $(".slick-slider ." + (isPrev ? "slick-prev" : "slick-next")).click();
         updateClickableButtons();
     });
 });

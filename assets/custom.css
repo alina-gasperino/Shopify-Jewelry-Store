@@ -34,9 +34,10 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
   background-color: #54787c;
   color: #ffffff;
 }
-.clickyboxes .slick-prev, .clickyboxes .slick-next {
+.clickyboxes .slick-prev, .clickyboxes .slick-next, .product-block-options .product-block-options__inner .slick-next, .product-block-options .product-block-options__inner .slick-prev {
   display:none !important;
 }
+
 .prev_var, .next_var {
     background: transparent;
     color: #54787c;
@@ -45,6 +46,16 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
     width: 36px;
     height: 36px;
     padding: 0;
+}
+.product-block-options {
+    position: relative;
+}
+.product-block-options .prev_var, .product-block-options .next_var {
+    background: transparent;
+    color: #54787c;
+    border: none;
+    padding: 0;
+    bottom: 0;
 }
 .prev_var:hover, .next_var:hover {
   background: transparent;
@@ -60,11 +71,17 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
     z-index: 9999;
     bottom: 16px;
 }
-button.next_var {
+.next_var {
     position: absolute;
     right: 10px;
     z-index: 9999;
     bottom: 16px;
+}
+.product-block-options .prev_var {
+    left: 0;
+}
+.product-block-options .next_var {
+    right: 0;
 }
 .options--carat-total-weight {
   margin-left:30px;
