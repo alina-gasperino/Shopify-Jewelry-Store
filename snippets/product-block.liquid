@@ -141,7 +141,7 @@
                     endif
                   -%}
                   <p>{{ product_option.name | escape }}</p>                  
-                  <div class="product-block-options{% if is_swatch %} product-block-options--swatch{% endif %}" data-option-name="{{ product_option.name | escape }}" style="padding-left: 50px;">
+                  <div class="product-block-options{% if is_swatch %} product-block-options--swatch{% endif %}" data-option-name="{{ product_option.name | escape }}">
                     <button class="prev_var"><i class="fa fa-angle-left" style="font-size:32px"></i></button>
                     <div class="product-block-options__inner">
                       {%- if product.options.size == 1 -%}

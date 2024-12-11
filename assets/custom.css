@@ -83,6 +83,18 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
 .product-block-options .next_var {
     right: 0;
 }
+.product-block-options {
+    padding: 0 45px;
+}
+.product-block-options__item {
+    text-align: center;
+    border: solid 1px #54787c;
+    cursor: pointer;
+}
+.product-block-options__item.selected, .product-block-options__item:hover {
+    background: #54787c;
+    color: #fff;
+}
 .options--carat-total-weight {
   margin-left:30px;
   margin-right: 30px;

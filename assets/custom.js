@@ -66,4 +66,11 @@ jQuery(document).ready(function ($) {
         $(".slick-slider ." + (isPrev ? "slick-prev" : "slick-next")).click();
         updateClickableButtons();
     });
+
+    $(".product-block-options__inner .product-block-options__item").each(function() {
+        $(this).click(function() {
+            $(".product-block-options__item").removeClass("selected");
+            $(this).addClass("selected");
+        })
+    })
 });
