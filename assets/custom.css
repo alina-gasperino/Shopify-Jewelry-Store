@@ -49,8 +49,15 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
 }
 .product-block-options {
     position: relative;
+    overflow: hidden;
+    padding: 5px 45px;
+    margin: 0;
 }
 .product-block-options .prev_var, .product-block-options .next_var {
+    display: none;
+}
+.product-block-options.option_slider .prev_var, .product-block-options.option_slider .next_var {
+    display: block;
     background: transparent;
     color: #54787c;
     border: none;
@@ -83,17 +90,20 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
 .product-block-options .next_var {
     right: 0;
 }
-.product-block-options {
-    padding: 0 45px;
-}
 .product-block-options__item {
     text-align: center;
     border: solid 1px #54787c;
     cursor: pointer;
 }
-.product-block-options__item.selected, .product-block-options__item:hover {
+.option_slider .product-block-options__item.selected, .option_slider .product-block-options__item:hover {
     background: #54787c;
     color: #fff;
+}
+.product-block-options--swatch .product-block-options__item.selected {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #0000004d;
+}
+.product-block-options--swatch .product-block-options__item .product-block-options__item__text {
+    color: #54787c;
 }
 .options--carat-total-weight {
   margin-left:30px;

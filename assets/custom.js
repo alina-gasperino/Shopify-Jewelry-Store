@@ -47,29 +47,58 @@ jQuery(document).ready(function ($) {
         arrows: true,
         infinite: false
     });
-    $('.template-suffix-stud .product-block-options__inner').slick({
-        slidesToShow: 5,
+    $('.template-suffix-stud .option_slider .product-block-options__inner').slick({
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: false,
         arrows: true,
-        infinite: false
+        infinite: false,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+        ]
     });
     function updateClickableButtons() {
-        $(".prev_var").toggleClass("slick-disabled", $(".slick-slider .slick-prev").attr("aria-disabled") === "true");
-        $(".next_var").toggleClass("slick-disabled", $(".slick-slider .slick-next").attr("aria-disabled") === "true");
+        $(".prev_var").each(function() {
+            var slickSlider = $(this).parent().find(".slick-slider");
+            var isDisabled = slickSlider.find(".slick-prev").attr("aria-disabled") === "true";
+            $(this).toggleClass("slick-disabled", isDisabled);
+        });
+        $(".next_var").each(function() {
+            var slickSlider = $(this).parent().find(".slick-slider");
+            var isDisabled = slickSlider.find(".slick-next").attr("aria-disabled") === "true";
+            $(this).toggleClass("slick-disabled", isDisabled);
+        });
     }
     
     updateClickableButtons();
-    
+
     $(".prev_var, .next_var").click(function() {
         const isPrev = $(this).hasClass("prev_var");
-        $(".slick-slider ." + (isPrev ? "slick-prev" : "slick-next")).click();
+        const slickSlider = $(this).parent().find(".slick-slider");    
+        if (slickSlider.length) {
+            slickSlider.find("." + (isPrev ? "slick-prev" : "slick-next")).click();
+        }
         updateClickableButtons();
     });
 
     $(".product-block-options__inner .product-block-options__item").each(function() {
         $(this).click(function() {
-            $(".product-block-options__item").removeClass("selected");
+            $(this).siblings().removeClass("selected");
             $(this).addClass("selected");
         })
     })
