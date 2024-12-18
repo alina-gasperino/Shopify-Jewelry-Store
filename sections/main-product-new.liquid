@@ -188,8 +188,11 @@
                           <label for="SingleOptionSelector-{{ forloop.index0 }}">
                             {{ option.name }}: <span></span>
                           </label>
-                          {% if product.template_suffix == "studs" %}
-                            <button class="prev_var"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                          {% if settings.swatch_option_name contains option.name %}
+                          {% else %}
+                            {% if product.template_suffix == "studs" %}
+                              <button class="prev_var"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                            {% endif %}
                           {% endif %}
                           <select
                             id="SingleOptionSelector-{{ forloop.index0 }}"
@@ -204,8 +207,11 @@
                             {% endfor %}
                           </select>
 
-                          {% if product.template_suffix == "studs" %}
-                            <button class="next_var"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                          {% if settings.swatch_option_name contains option.name %}
+                          {% else %}
+                            {% if product.template_suffix == "studs" %}
+                              <button class="next_var"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                            {% endif %}
                           {% endif %}
 
                           {% if block.settings.show_size_chart and block.settings.size_chart_variant contains option.name and block.settings.size_chart_page != blank %}
