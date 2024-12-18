@@ -27,7 +27,7 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
     padding: 0 23px;
     border-color: transparent;
 }
-.clickyboxes.options--carat-total-weight li a, .clickyboxes.options--carat-total-weight li a:hover {
+.clickyboxes.options--carat-total-weight li a, .clickyboxes.options--carat-total-weight li a:hover, .clickyboxes.options--metal-type li a:hover {
   border-color: #54787c;
 }
 .clickyboxes.options--carat-total-weight li a.active {
@@ -123,7 +123,7 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a {
 .clickyboxes.options--metal li a:hover {
     border-color: #737373;
 }
-.clickyboxes.options--shape li a span, .clickyboxes.options--material li a span {
+.clickyboxes.options--shape li a span, .clickyboxes.options--material li a span, .clickyboxes.options--metal-type li a span {
     display: none;
 }
 .clickyboxes.options--diamond li a.active, .clickyboxes.options--diamond li a.active:hover {
