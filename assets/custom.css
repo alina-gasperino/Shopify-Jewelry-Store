@@ -49,9 +49,11 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
 }
 .product-block-options {
     position: relative;
-    overflow: hidden;
     padding: 5px 45px;
     margin: 0;
+}
+.product-block-options.option_slider {
+    overflow: hidden;
 }
 .product-block-options .prev_var, .product-block-options .next_var {
     display: none;
