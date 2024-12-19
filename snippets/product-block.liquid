@@ -125,6 +125,32 @@
 
               {% render 'unit-price', variant: cheapest_variant %}
             </a>
+            
+            <select name="id" class="original-selector{% if product.variants.size == 1 %} hidden {% else %} valuable_selector{% endif %}" aria-label="{{ 'products.product.selector_label' | t | escape }}">
+              {% for variant in product.variants %}
+              <option value="{{ variant.id }}"
+                {% if variant == product.selected_or_first_available_variant %} selected="selected"{% endif %}
+                {% if block.settings.show_inventory_notice and variant.inventory_management == 'shopify' and variant.inventory_quantity > 0 %}
+                  {% if block.settings.inventory_notice_threshold == 0 or variant.inventory_quantity <= block.settings.inventory_notice_threshold %}
+                    data-inventory="{{ variant.inventory_quantity }}"
+                  {% endif %}
+                {% endif %}
+                {% if section.settings.inventory_transfers_enable and variant.incoming %}
+                  {%- if variant.next_incoming_date -%}
+                    {%- assign date = variant.next_incoming_date | date: format: 'date' -%}
+                    {%- if variant.available -%}
+                      data-inventory-transfer="{{ 'products.transfers.will_not_ship_until' | t: date: date | escape }}"
+                    {%- else -%}
+                      data-inventory-transfer="{{ 'products.transfers.will_be_in_stock_after' | t: date: date | escape }}"
+                    {%- endif -%}
+                  {%- else -%}
+                    data-inventory-transfer="{{ 'products.transfers.waiting_for_stock' | t | escape }}"
+                  {%- endif -%}
+                {% endif %}
+                data-stock="{% if variant.inventory_management == 'shopify' and variant.inventory_quantity <= 0 %}out{% endif %}">{{ variant.title | escape }}</option>
+              {% endfor %}
+            </select>
+            <button style="display: none;" class="go_to_product" url="{{ product_url }}">Click</button>
 
             {%- if settings.prod_thumb_show_options -%}
               {%- liquid
