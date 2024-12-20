@@ -121,4 +121,11 @@ jQuery(document).ready(function ($) {
             window.location.href = url;
         })
     })
+
+    $(".product-link").each(function() {
+        $(this).click(function(e) {
+            e.preventDefault()
+            $(this).closest(".block-inner-inner").find(".go_to_product").click()
+        })
+    })
 });
