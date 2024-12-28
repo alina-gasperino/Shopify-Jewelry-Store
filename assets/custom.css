@@ -114,7 +114,7 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
 select[data-listed][data-colour-swatch=true]+.clickyboxes a {
     padding-left: 23px;
 }
-.clickyboxes.options--shape li a.active, .clickyboxes.options--shape li a.active:hover {
+.clickyboxes.options--shape li a.active, .clickyboxes.options--shape li a.active:hover, .clickyboxes.options--metal li a.active, .clickyboxes.options--metal li a.active:hover {
     border-radius: 0;
     border: none;
     border-bottom: solid 3px #54787c;
@@ -122,10 +122,7 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a {
 .clickyboxes li a:hover {
     border-color: transparent;
 }
-.clickyboxes.options--metal li a:hover {
-    border-color: #737373;
-}
-.clickyboxes.options--shape li a span, .clickyboxes.options--material li a span, .clickyboxes.options--metal-type li a span {
+.clickyboxes.options--shape li a span, .clickyboxes.options--metal li a span, .clickyboxes.options--metal-type li a span {
     display: none;
 }
 .clickyboxes.options--diamond li a.active, .clickyboxes.options--diamond li a.active:hover {

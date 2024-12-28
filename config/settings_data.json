@@ -931,7 +931,7 @@
     "prod_sold_out_show": true,
     "variant_style": "listed",
     "swatch_enabled": true,
-    "swatch_option_name": "Color,Shape,Material,Metal Type",
+    "swatch_option_name": "Color,Shape,Metal,Metal Type",
     "swatch_images": true,
     "search_type": "product,article,page",
     "enable_live_search": true,
