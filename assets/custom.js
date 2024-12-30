@@ -107,7 +107,7 @@ jQuery(document).ready(function ($) {
         $(this).click(function() {
             var url = $(this).attr("url");
             var metal = $(this).parent().find(".product-block-options--swatch").find(".product-block-options__item.selected").text();
-            var carat = $(this).parent().find(".option_slider").find(".product-block-options__item.selected").text();
+            var carat = $(this).parent().find(".carat_options").find(".product-block-options__item.selected").text();
             if(metal.length > 0 && carat.length > 0) {
                 $(this).parent().find("select.valuable_selector").find('option').each(function() {
                     var option_label = $(this).text();
@@ -118,7 +118,7 @@ jQuery(document).ready(function ($) {
                 })
             }
             console.log(url);
-            window.location.href = url;
+            // window.location.href = url;
         })
     })
 

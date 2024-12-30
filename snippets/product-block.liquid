@@ -166,9 +166,10 @@
                       assign is_swatch = false
                     endif
                   -%}
+                  
                   <div style="display: flex; align-items:center;">
                     <p style="margin-bottom: 0;">{% if product_option.name == "Carat Total Weight" %}Carat{% else %}Metal{% endif %}</p>    
-                    <div class="product-block-options{% if is_swatch %} product-block-options--swatch {% else %} option_slider{% endif %}" data-option-name="{{ product_option.name | escape }}">
+                    <div class="product-block-options{% if is_swatch %} product-block-options--swatch {% else %} carat_options {% if product_option.values.size > 4 %}option_slider{% else %} option_button{% endif %}{% endif %}" data-option-name="{{ product_option.name | escape }}">
                       <button class="prev_var"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
                       <div class="product-block-options__inner">
                         {%- if product.options.size == 1 -%}

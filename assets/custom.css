@@ -101,6 +101,13 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
     background: #54787c;
     color: #fff;
 }
+.option_button .product-block-options__item {
+    width: 40px;
+}
+.option_button .product-block-options__item.selected, .option_button .product-block-options__item:hover {
+    background: #54787c;
+    color: #fff;
+}
 .product-block-options--swatch .product-block-options__item.selected {
     box-shadow: 0 0 0 3px #fff, 0 0 0 4px #0000004d;
 }
