@@ -108,17 +108,18 @@ jQuery(document).ready(function ($) {
             var url = $(this).attr("url");
             var metal = $(this).parent().find(".product-block-options--swatch").find(".product-block-options__item.selected").text();
             var carat = $(this).parent().find(".carat_options").find(".product-block-options__item.selected").text();
+            var var_txt = metal + "-" + carat;
             if(metal.length > 0 && carat.length > 0) {
                 $(this).parent().find("select.valuable_selector").find('option').each(function() {
-                    var option_label = $(this).text();
-                    if(option_label.indexOf(metal) != -1 && option_label.indexOf(carat) != -1) {
+                    var option_label = $(this).text().replace(" / ", "-");
+                    if(option_label == var_txt) {
                         var var_id = $(this).val();
                         url = url + "?variant=" + var_id;
                     }
                 })
             }
             console.log(url);
-            // window.location.href = url;
+            window.location.href = url;
         })
     })
 
