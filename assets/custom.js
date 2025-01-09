@@ -108,6 +108,15 @@ jQuery(document).ready(function ($) {
             var url = $(this).attr("url");
             var metal = $(this).parent().find(".product-block-options--swatch").find(".product-block-options__item.selected").text();
             var carat = $(this).parent().find(".carat_options").find(".product-block-options__item.selected").text();
+            var carat_index = $(this).parent().find(".carat_options").find(".product-block-options__item.selected").index();
+            $('.template-suffix-studs .options--carat-total-weight').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                initialSlide: carat_index,
+                autoplay: false,
+                arrows: true,
+                infinite: false
+            });
             var var_txt = metal + "-" + carat;
             if(metal.length > 0 && carat.length > 0) {
                 $(this).parent().find("select.valuable_selector").find('option').each(function() {
@@ -118,7 +127,6 @@ jQuery(document).ready(function ($) {
                     }
                 })
             }
-            console.log(url);
             window.location.href = url;
         })
     })
