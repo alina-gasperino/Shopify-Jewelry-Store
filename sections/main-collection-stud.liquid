@@ -461,7 +461,7 @@
               endif
             -%}
             {% for product in collection.products %}
-              {% render 'product-block', product: product, custom_aspect_ratio: chosen_aspect_ratio, manual_image_load: manual_image_load, animate: true %}
+              {% render 'product-block-stud', product: product, custom_aspect_ratio: chosen_aspect_ratio, manual_image_load: manual_image_load, animate: true %}
             {% endfor %}
           </div>
         {% endif %}

@@ -100,6 +100,18 @@ jQuery(document).ready(function ($) {
         $(this).click(function() {
             $(this).siblings().removeClass("selected");
             $(this).addClass("selected");
+            var metal = $(this).closest(".product-info").find(".product-block-options--swatch").find(".product-block-options__item.selected").text();
+            var carat = $(this).closest(".product-info").find(".carat_options").find(".product-block-options__item.selected").text();
+            var var_txt = metal + "-" + carat;
+            if(metal.length > 0 && carat.length > 0) {
+                $(this).closest(".product-info").find("select.valuable_selector").find('option').each(function() {
+                    var option_label = $(this).text().replace(" / ", "-");
+                    if(option_label == var_txt) {
+                        var price = $(this).attr("data-price");
+                        $(this).closest(".product-info").find(".selected_var_price").text(price);
+                    }
+                })
+            }
         })
     })
 
@@ -108,21 +120,13 @@ jQuery(document).ready(function ($) {
             var url = $(this).attr("url");
             var metal = $(this).parent().find(".product-block-options--swatch").find(".product-block-options__item.selected").text();
             var carat = $(this).parent().find(".carat_options").find(".product-block-options__item.selected").text();
-            var carat_index = $(this).parent().find(".carat_options").find(".product-block-options__item.selected").index();
-            $('.template-suffix-studs .options--carat-total-weight').slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                initialSlide: carat_index,
-                autoplay: false,
-                arrows: true,
-                infinite: false
-            });
             var var_txt = metal + "-" + carat;
             if(metal.length > 0 && carat.length > 0) {
                 $(this).parent().find("select.valuable_selector").find('option').each(function() {
                     var option_label = $(this).text().replace(" / ", "-");
                     if(option_label == var_txt) {
                         var var_id = $(this).val();
+                        var price = $(this).attr("data-price");
                         url = url + "?variant=" + var_id;
                     }
                 })
