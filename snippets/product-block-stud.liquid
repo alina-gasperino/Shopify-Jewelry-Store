@@ -183,7 +183,7 @@
                                 endif
                               endfor
                             -%}
-                            <span class="product-block-options__item{% if is_unavailable %} product-block-options__item--unavailable{% endif %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% endif %}"
+                            <span class="{% if forloop.index==1 %}selected{% endif %} product-block-options__item{% if is_unavailable %} product-block-options__item--unavailable{% endif %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% endif %}"
                               data-option-item="{{ product_option_value | downcase | escape }}"
                               {% if option_value_variant.featured_media %}data-media="{{ option_value_variant.featured_media.id }}"{% endif %}
                               {% if is_swatch %}

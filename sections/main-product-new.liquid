@@ -57,7 +57,10 @@
                     <tr><td>Metal Type</td><td>{{product.metafields.custom.metal_type.value}}</td></tr>
                   {% endif %}
                   {% if product.metafields.custom.diamond_weight.value != blank %}
-                    <tr><td>Diamond Weight</td><td>{{product.metafields.custom.diamond_weight.value}}</td></tr>
+                    <tr><td>Total Carat Weight</td><td>{{product.metafields.custom.diamond_weight.value}}</td></tr>
+                  {% endif %}
+                  {% if product.metafields.custom.center_stone.value != blank %}
+                    <tr><td>Center Stone</td><td>{{product.metafields.custom.center_stone.value}}</td></tr>
                   {% endif %}
                   {% if product.metafields.custom.diamond_clarity.value != blank %}
                     <tr><td>Diamond Clarity</td><td>{{product.metafields.custom.diamond_clarity.value}}</td></tr>
@@ -66,13 +69,13 @@
                     <tr><td>Diamond Color</td><td>{{product.metafields.custom.diamond_color.value}}</td></tr>
                   {% endif %}
                   {% if product.metafields.custom.size_length.value != blank %}
-                    <tr><td>Size Length</td><td>{{product.metafields.custom.size_length.value}}</td></tr>
+                    <tr><td>Size/Length</td><td>{{product.metafields.custom.size_length.value}}</td></tr>
                   {% endif %}
                   {% if product.metafields.custom.stone_count.value != blank %}
                     <tr><td>Stone Count</td><td>{{product.metafields.custom.stone_count.value}}</td></tr>
                   {% endif %}
                   {% if product.metafields.custom.shape_of_stones.value != blank %}
-                    <tr><td>Shape/Shapes of Stones</td><td>{{product.metafields.custom.shape_of_stones.value}}</td></tr>
+                    <tr><td>Shapes of Stones</td><td>{{product.metafields.custom.shape_of_stones.value}}</td></tr>
                   {% endif %}                  
                 </table>
               </div>
