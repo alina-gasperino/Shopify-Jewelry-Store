@@ -1062,7 +1062,7 @@
           "text_98GiaP"
         ],
         "settings": {
-          "lower_menu": "",
+          "lower_menu": "footer",
           "show_payment_icons": false,
           "show_locale_selector": false,
           "show_currency_selector": false

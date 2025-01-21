@@ -350,4 +350,10 @@ table.diamond_info td {
         text-align: center;
         margin-bottom: 50px;
     }
+  .option_button .product-block-options__item {
+    width: 16px;
+  }
+  .option_button .product-block-options__inner {
+    display: flex;
+  }
 }
