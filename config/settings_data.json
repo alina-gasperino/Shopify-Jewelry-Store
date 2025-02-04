@@ -1114,7 +1114,7 @@
       },
       "15069410091156550825": {
         "type": "shopify:\/\/apps\/diamond-ring-builder-jewelry\/blocks\/diamond-ring-builder\/aa1f04d9-134c-4595-84f5-3ef5b35d5851",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "headingfontSize": 30,
           "descfontSize": 14,

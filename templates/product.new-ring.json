@@ -13,10 +13,6 @@
             "show_tax_and_shipping": false
           }
         },
-        "vendor": {
-          "type": "vendor",
-          "settings": {}
-        },
         "divider": {
           "type": "divider",
           "settings": {
@@ -46,8 +42,8 @@
         "description": {
           "type": "description",
           "settings": {
-            "show_in_tab": false,
-            "open_tab": false,
+            "show_in_tab": true,
+            "open_tab": true,
             "show_in_quickbuy": false
           }
         }
@@ -55,7 +51,6 @@
       "block_order": [
         "title",
         "price",
-        "vendor",
         "divider",
         "variant_picker",
         "buy_buttons",
