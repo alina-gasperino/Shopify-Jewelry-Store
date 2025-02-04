@@ -96,12 +96,12 @@ jQuery(document).ready(function ($) {
         updateClickableButtons();
     });
 
-    $(".product-block-options__inner .product-block-options__item").each(function() {
+    $(".product-block-options__inner .available_var").each(function() {
         $(this).click(function() {
             $(this).siblings().removeClass("selected");
             $(this).addClass("selected");
             var metal = $(this).closest(".product-info").find(".product-block-options--swatch").find(".product-block-options__item.selected").text();
-            var carat = $(this).closest(".product-info").find(".carat_options").find(".product-block-options__item.selected").text();
+            var carat = $(this).closest(".product-info").find(".carat_options").find(".product-block-options__item-2.selected").text();
             var var_txt = metal + "-" + carat;
             if(metal.length > 0 && carat.length > 0) {
                 $(this).closest(".product-info").find("select.valuable_selector").find('option').each(function() {
@@ -119,7 +119,7 @@ jQuery(document).ready(function ($) {
         $(this).click(function() {
             var url = $(this).attr("url");
             var metal = $(this).parent().find(".product-block-options--swatch").find(".product-block-options__item.selected").text();
-            var carat = $(this).parent().find(".carat_options").find(".product-block-options__item.selected").text();
+            var carat = $(this).parent().find(".carat_options").find(".product-block-options__item-2.selected").text();
             var var_txt = metal + "-" + carat;
             if(metal.length > 0 && carat.length > 0) {
                 $(this).parent().find("select.valuable_selector").find('option').each(function() {

@@ -5,7 +5,7 @@
       "settings": {
         "show_image_behind_heading": false,
         "heading_image_height": "medium",
-        "coll_num_per_page_int": 20,
+        "coll_num_per_page_int": 24,
         "grid": 4,
         "show_vendor": false,
         "show_total": false,

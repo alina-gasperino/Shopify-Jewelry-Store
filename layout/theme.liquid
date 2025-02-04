@@ -78,6 +78,17 @@
   </script>
 
   {{ content_for_header }}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GT-5R4ZVRWX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GT-5R4ZVRWX');
+</script>
+  
 </head>
 
 <body class="template-{{ template | split: '.' | first }}{% if template.suffix %} template-suffix-{{ template.suffix }}{% endif %}" data-cc-animate-timeout="0">
