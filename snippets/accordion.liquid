@@ -39,6 +39,10 @@
   {%- assign allow_multi_open = 'true' -%}
 {%- endif -%}
 
+{%- if show_metafield != false -%}
+  {%- assign show_metafield = 'true' -%}
+{%- endif -%}
+
 <div class="cc-accordion" data-allow-multi-open="{{ allow_multi_open }}">
   {%- liquid
     if content
@@ -54,7 +58,7 @@
             assign item_open = false
           endif
 
-          render 'accordion-item', title: title, content: item_contents[forloop.index0], add_content_class: add_content_class, toggle_icon: toggle_icon, item_open: item_open
+          render 'accordion-item', title: title, content: item_contents[forloop.index0], add_content_class: add_content_class, toggle_icon: toggle_icon, item_open: item_open, show_metafield: show_metafield
         endif
       endfor
     endif

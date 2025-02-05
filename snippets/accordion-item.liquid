@@ -24,6 +24,104 @@
   <div class="cc-accordion-item__panel">
     <div class="cc-accordion-item__content{{ content_class }}">
       {{- content -}}
+      {% if show_metafield %}
+        <table class="ring_meta_data">
+          {% if product.metafields.custom.center_stone.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Center Stone</p></td>
+              <td><p>Certified Lab Grown Oval Diamond selected by a Happy Jewelers' Diamond Specialist during production:</p>
+                <p>{{product.metafields.custom.center_stone.value}}</p>
+              </td>
+            </tr>
+          {% endif %}
+          {% if product.metafields.custom.center_stone_carat_weight.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Center Stone Carat Weight</p></td>
+              <td>
+                <p>Select your carat weight range:</p>
+                <p>{{product.metafields.custom.center_stone_carat_weight.value}}</p>
+              </td>
+            </tr>
+          {% endif %}
+          {% if product.metafields.custom.center_stone_color.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Center Stone Color</p></td>
+              <td>
+                <p>Selected by a Proper Diamonds' Diamond Specialist during production:</p>
+                <p>{{product.metafields.custom.center_stone_color.value}}</p>
+              </td>
+            </tr>
+          {% endif %}
+          {% if product.metafields.custom.diamond_clarity.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Center Stone Clarity</p></td>
+              <td>
+                <p>Selected by a Proper Diamonds' Diamond Specialist during production:</p>
+                <p>{{product.metafields.custom.diamond_clarity.value}}</p>
+              </td>
+            </tr>
+          {% endif %}
+          {% if product.metafields.custom.center_stone_polish.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Center Stone Polish</p></td>
+              <td><p>{{product.metafields.custom.center_stone_polish.value}}</p></td>
+            </tr>
+          {% endif %}
+          {% if product.metafields.custom.center_stone_symmetry.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Center Stone Symmetry</p></td>
+              <td><p>{{product.metafields.custom.center_stone_symmetry.value}}</p></td>
+            </tr>
+          {% endif %}
+          {% if product.metafields.custom.setting_style.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Setting Style</p></td>
+              <td><p>{{product.metafields.custom.setting_style.value}}</p></td>
+            </tr>
+          {% endif %}
+          {% if product.metafields.custom.setting_metal.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Setting Metal</p></td>
+              <td>
+                <p>Choose your preferred option:</p>
+                <p>{{product.metafields.custom.setting_metal.value}}</p>
+              </td>
+            </tr>
+          {% endif %}
+          {% if product.metafields.custom.halo_style.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Halo Style</p></td>
+              <td><p>{{product.metafields.custom.halo_style.value}}</p></td>
+            </tr>
+          {% endif %} 
+          {% if product.metafields.custom.band_style.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Band Style</p></td>
+              <td><p>{{product.metafields.custom.band_style.value}}</p></td>
+            </tr>
+          {% endif %} 
+          {% if product.metafields.custom.approximate_band_width.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Approximate Band Width</p></td>
+              <td><p>{{product.metafields.custom.approximate_band_width.value}}</p></td>
+            </tr>
+          {% endif %} 
+          {% if product.metafields.custom.diamond_weight.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Total Carat Weight of the Setting</p></td>
+              <td><p>{{product.metafields.custom.diamond_weight.value}}</p></td>
+            </tr>
+          {% endif %}
+          {% if product.metafields.custom.stones_on_the_setting.value != blank %}
+            <tr>
+              <td style="width: 35%;"><p>Stones on the Setting</p></td>
+              <td><p>{{product.metafields.custom.stones_on_the_setting.value}}</p></td>
+            </tr>
+          {% endif %}
+          <tr><td style="width: 35%;"><p>Appraisal</p></td><td><p>Included in purchase</p></td></tr>          
+        </table>
+        <p>View All <a href="/">Engagement Rings</a></p>
+      {% endif %}
     </div>
   </div>
 </details>
