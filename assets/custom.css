@@ -33,7 +33,7 @@ select[data-listed][data-colour-swatch=true]+.clickyboxes a:before {
 .template-suffix-new-ring .clickyboxes li a.active, .template-suffix-new-ring .clickyboxes li a.active:hover {
     border: solid 2px #54787c;
 }
-select#desired-us-ring-size {
+select#desired-us-ring-size, #desired-carat-size {
     width: 200px;
     font-size: 14px;
     padding: 10px 23px;
