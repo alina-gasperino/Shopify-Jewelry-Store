@@ -929,7 +929,7 @@
     "prod_stock_warn_limit_int": 5,
     "prod_sale_show": true,
     "prod_sold_out_show": true,
-    "variant_style": "listed",
+    "variant_style": "dropdown",
     "swatch_enabled": true,
     "swatch_option_name": "Color,Shape,Metal,Metal Type",
     "swatch_images": true,
